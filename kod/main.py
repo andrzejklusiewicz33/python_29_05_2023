@@ -550,6 +550,25 @@
 #
 # print(wynik)
 
-wynik=[linia for linia in open('data.csv',encoding='utf-8')]
-for w in wynik:
-    print(w)
+# wynik=[linia.strip().split(';') for linia in open('data.csv',encoding='utf-8')]
+# for w in wynik:
+#     print(w)
+
+#
+# wynik=[linia.strip().split(';') for linia in open('data.csv',encoding='utf-8') if len(linia.strip())>0]
+# for w in wynik:
+#     #print(w,w[3])
+#     print(w,len(w))
+
+#10. Dla każdego wpisu w pliku data.csv wyświetl na konsoli dane o
+# id, imieniu,nazwisku, wzroscie,masie oraz obliczonym bmi zawodnika
+
+# wzrost=1.76
+# masa=72
+# bmi=round(masa/pow(wzrost,2),2)
+# print(bmi)
+#
+# wzrost='1.76'
+# masa='72'
+# bmi=round(float(masa)/pow(float(wzrost),2),2)
+# print(bmi)
