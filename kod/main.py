@@ -426,3 +426,23 @@
 # print([random.randint(1,100) for _ in range(1,11)])
 
 #5. Korzystając z list składanych wygeneruj listę zawierajaca 10 kolejnych poteg 2
+
+# lista=[pow(2,x) for x in range(1,11)]
+# print(lista)
+
+# lista=[pow(2,x) for x in range(1,11)]
+# print(lista)
+# for e in lista:
+#     print(e)
+#
+# for e in [pow(2,x) for x in range(1,11)]: print(e)
+
+#6.  Korzystając z list składanych wygeneruj listę 10 elementow której każdy element
+# również będzie listą. Pierwszy element tej podlisty to numer potegi, a drugi to wartosc
+# tej potegi dla liczby 2
+
+lista=[
+    [1,2],
+    [2,4],
+    [3,8]
+]
