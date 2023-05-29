@@ -107,3 +107,172 @@
 #Następnie przeiteruj po liście i wyświetl jej zwaartość element po elemencie.
 # x=10
 # print(f"element numer {x}")
+
+#zwierze='koza'
+#print("moje ulubione zwierze to: "+zwierze)
+
+# x=33
+# print(type(x))
+# #print('moja ulubiona liczba to '+x)
+#
+# x=str(33)
+# print(type(x))
+# print('moja ulubiona liczba to '+x)
+
+#
+# x=33
+# print('moja ulubiona liczba to '+str(x))
+
+
+# x=33
+# wiek=36
+# print('moja ulubiona liczba to '+str(x)+" Mc'Donalds. Mam "+str(wiek)+" lat")
+#
+# x=33
+# wiek=36
+# print('moja ulubiona liczba {}. Mam {} lat'.format(x,wiek))
+
+# x=33
+# wiek=36
+# cos=1111
+# print('moja ulubiona liczba {}. Mam {} lat'.format(x,wiek,cos))
+#
+# x=33
+# wiek=36
+# print(f"Moja ulubiona liczba to {x}. Mam {wiek} lat")
+#
+# lista=[]
+# for x in range(1,101):
+#     print("element numer "+x)
+
+#
+# lista=[]
+# for x in range(1,101):
+#     print("element numer "+str(x))
+
+#
+# lista=[]
+# for x in range(1,101):
+#     print("element numer {}".format(x))
+
+#
+# lista=[]
+# for x in range(1,101):
+#     print(f"element numer {x}")
+
+
+# lista=[]
+# for x in range(1,101):
+#     lista.append(f"element numer {x}")
+# print(lista)
+# for l in lista:
+#     print(l)
+
+
+# class Car:
+#     id=None
+#     mark=None
+#     model=None
+#
+#     def __init__(self,i,ma,mo):
+#         self.id=id
+#         self.mark=ma
+#         self.model=mo
+#
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# lista=[1,"Renault","Kadjar"]
+# print(lista)
+# print(*lista)
+#
+# car=Car(lista[0],lista[1],lista[2])
+# print(car)
+
+#
+# car=Car(*lista)
+# print(car)
+#
+# def fun(arg1,arg2,arg3):
+#     print(f'arg1={arg1}, arg2={arg2}, arg3={arg3}')
+#
+# lista=[1,2,3]
+# #fun(1,2,3)
+# fun(*lista)
+#
+# lista1=[1,2,3,4]
+# lista2=[5,6,7,8]
+# #fuuuuu version
+# lista_suma=[]
+# for l in lista1:
+#     lista_suma.append(l)
+# for l in lista2:
+#     lista_suma.append(l)
+# print(lista_suma)
+
+#
+# lista1=[1,2,3,4]
+# lista2=[5,6,7,8]
+# lista_suma=[lista1,lista2]
+# print(lista_suma)
+# for e in lista_suma:
+#     print(e)
+#
+#
+# lista1=[1,2,3,4]
+# lista2=[5,6,7,8]
+# lista_suma=[*lista1,*lista2]
+# print(lista_suma)
+# for e in lista_suma:
+#     print(e)
+
+
+
+# lista1=[1,2,3,4]
+# lista2=[5,6,7,8]
+# lista1.extend(lista2)
+# print(lista1)
+# for e in lista1:
+#     print(e)
+# lista2.clear()
+
+# lista1=[1,2,3,4]
+# lista2=[5,6,7,8]
+# lista1.append(lista2)
+# print(lista1)
+# for e in lista1:
+#     print(e)
+
+# lista1=[1,2,3,4]
+# lista2=[5,6,7,8]
+# lista1.extend(lista2)
+# print(lista1)
+# for e in lista1:
+#     print(e)
+#
+# lista1=[1,2,3,4]
+# lista2=lista1 #przez wskaźnik
+# lista1.clear()
+# print('lista 1=',lista1)
+# print('lista 2=',lista2)
+
+#
+# lista1=[1,2,3,4]
+# lista2=lista1.copy()
+# lista1.clear()
+# print('lista 1=',lista1)
+# print('lista 2=',lista2)
+#
+# x=1
+# y=x
+# x=0
+# print(x,y)
+
+#lista=[]
+
+import random
+print(random.random())
+print(random.randint(1,100))
+
+#3. Stwórz dwie listy. Każda z list ma zawierać 10 liczb losowych z zakresu 1-10.
+# Połącz te dwie listy do jednej i wyswietl na konsoli (extend albo *lista)
