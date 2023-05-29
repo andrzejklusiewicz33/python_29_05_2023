@@ -69,17 +69,41 @@
 # lista.sort()
 # print(lista)
 
-print(pow(2,10))
+#print(pow(2,10))
 
 #1. Napisz kod który umieści w liście 10 kolejnych potęg liczby 2.
 # Następnie przeiteruj po tej liście i każdy z jej elementów wyświetl na konsoli w osobnej linii.
 
-lista=[]
+# lista=[]
+#
+# for x in range(1,11):
+#     print(x)
+#
+# print(pow(2,10))
+#
+# for e in lista:
+#     print(e)
+#
+# lista=[]
+# for x in range(1,11):
+#     lista.append(pow(2,x))
+#
+# for e in lista:
+#     print(e)
 
-for x in range(1,11):
-    print(x)
+# lista=[1,2,3,4]
+# for x in range(1,11):
+#     print(x)
+#
+# lista=[1,2,3,4]
+# for x in lista:
+#     print(x)
 
-print(pow(2,10))
+#
+# for x in (1,2,3,4):
+#     print(x)
 
-for e in lista:
-    print(e)
+#2. Stwórz listę zawierającą 100 elementów tekstowych o zawartości "ELEMENT NUMER X"
+#Następnie przeiteruj po liście i wyświetl jej zwaartość element po elemencie.
+# x=10
+# print(f"element numer {x}")
