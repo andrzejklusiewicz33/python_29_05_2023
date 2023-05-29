@@ -358,3 +358,71 @@
 
 #4. Korzystajac z petli stworz liste zawierajaca elementy same bedace listami.
 # Kazdy taki element ma zawierac numer potegi oraz wartosc tej potegi dla liczby 2.
+#
+# lista=[]
+# for x in range(1,11):
+#     podlista=[x,pow(2,x)]
+#     lista.append(podlista)
+# print(lista)
+# for e in lista:
+#     print(e)
+
+#
+# lista=[]
+# for x in range(1,11):
+#     lista.append(  [x,pow(2,x)] )
+# print(lista)
+# for e in lista:
+#     print(e)
+
+#
+# lista=[]
+# for x in range(1,11):
+#     lista.append(x)
+# for e in lista:
+#     print(e)
+
+
+#
+# lista=[]
+# for x in range(1,11):
+#     lista.append(x)
+# print(lista)
+#
+# lista=[x for x in range(1,11)]
+# print(lista)
+#
+# lista=[x*1000 for x in range(1,11)]
+# print(lista)
+#
+# lista=[]
+# for x in range(1,11):
+#     if x%2==0:
+#         lista.append(x)
+# print(lista)
+#
+# lista=[x for x in range(1,11) if x%2==0]
+# print(lista)
+
+
+#
+# lista=[]
+# for x in range(1,11):
+#     if x%2==0:
+#         lista.append(x)
+# print(lista)
+#
+# print( [x for x in range(1,11) if x%2==0] )
+
+# lista=[x*1000 for x in range(1,11) if x%2==0]
+# print(lista)
+#
+# lista=[f'element {x}' for x in range(1,11) if x%2==0]
+# print(lista)
+#
+# import random
+# lista=[random.randint(1,100) for _ in range(1,11)]
+# print(lista)
+# print([random.randint(1,100) for _ in range(1,11)])
+
+#5. Korzystając z list składanych wygeneruj listę zawierajaca 10 kolejnych poteg 2
