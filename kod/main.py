@@ -539,13 +539,17 @@
 # w taki sposób   by linie oczyścic z bialych znaków i rozbić na listy.
 # Każdy z elementów listy sam   powinien byc listą.
 # Następnie przeiteruj po wyniku i wyświetl wszystkie elementy listy   linia po linii.
+#
+# wynik=[]
+# for linia in open('data.csv',encoding='utf-8'):
+#     lista=linia.strip().split(';')
+#     wynik.append(lista)
+#
+# for w in wynik:
+#     print(w)
+#
+# print(wynik)
 
-wynik=[]
-for linia in open('data.csv',encoding='utf-8'):
-    lista=linia.strip().split(';')
-    wynik.append(lista)
-
+wynik=[linia for linia in open('data.csv',encoding='utf-8')]
 for w in wynik:
     print(w)
-
-print(wynik)
