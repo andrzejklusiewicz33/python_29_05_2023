@@ -1036,6 +1036,7 @@ for e in os.walk(poczatek):
     katalogi=e[1]
     print(e[0],'katalogi:',e[1])
     for k in katalogi:
-        pass
+        if szukane in k:
+            pass
         #sprawdź czy szukana fraza pojawia sie w nazwie tego katalogu...
 
