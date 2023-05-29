@@ -441,8 +441,53 @@
 # również będzie listą. Pierwszy element tej podlisty to numer potegi, a drugi to wartosc
 # tej potegi dla liczby 2
 
-lista=[
-    [1,2],
-    [2,4],
-    [3,8]
-]
+# lista=[
+#     [1,2],
+#     [2,4],
+#     [3,8]
+# ]
+#
+# lista=[]
+# for x in range(1,11):
+#     podlista=[x,pow(2,x)]
+#     lista.append(podlista)
+#
+# for e in lista:
+#     print(e)
+
+
+# lista=[]
+# for x in range(1,11):
+#     lista.append( [x,pow(2,x)] )
+#
+# for e in lista:
+#     print(e)
+#
+# lista=[[x,pow(2,x)] for x in range(1,11)]
+#
+# for e in lista:
+#     print(e)
+#
+# for e in [[x,pow(2,x)] for x in range(1,11)]: print(e)
+
+# dane=[2,4,1,7,56,3,1,23,4,33,44,11111]
+# nieparzyste=[x*1000 for x in dane]
+# print(nieparzyste)
+#
+# dane=[2,4,1,7,56,3,1,23,4,33,44,11111]
+# nieparzyste=[x for x in dane if x%2==1]
+# print(nieparzyste)
+# przetworzone_nieparzyste=[x*1000 for x in dane if x%2==1]
+# print(przetworzone_nieparzyste)
+
+# def fun(x):
+#     return x*1000
+#
+# dane=[2,4,1,7,56,3,1,23,4,33,44,11111]
+# przetworzone_nieparzyste=[fun(x) for x in dane if fun(x)>1000]
+# print(przetworzone_nieparzyste)
+#
+
+#Wygeneruj listę 20 elementów losowych liczbowych w zakresie 1-100
+#Stwórz dwie nowe listy. Do jednej skopiuj elementy wieksze od 50,
+#a do drugiej mniejsze bądź równe 50. Wszystkie trzy listy wydrukuj.
