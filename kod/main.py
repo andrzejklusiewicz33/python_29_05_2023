@@ -1029,14 +1029,95 @@
 # imie=input('podaj imię:')
 # print(f'Hello {imie}')
 
-import os
-szukane='oRaClE'
-poczatek='e:\\'
-for e in os.walk(poczatek):
-    katalogi=e[1]
-    print(e[0],'katalogi:',e[1])
-    for k in katalogi:
-        if szukane in k:
-            pass
+# import os
+# szukane='oRaClE'
+# poczatek='e:\\'
+# for e in os.walk(poczatek):
+#     katalogi=e[1]
+#     print(e[0],'katalogi:',e[1])
+#     for k in katalogi:
+#         if szukane in k:
+#             pass
+#         #sprawdź czy szukana fraza pojawia sie w nazwie tego katalogu...
+
+
+#
+# import os
+# szukane='oRaClE'
+# poczatek='e:\\'
+# for e in os.walk(poczatek):
+#     katalogi=e[1]
+#     #print(e[0],'katalogi:',e[1])
+#     for k in katalogi:
+#         if szukane.lower() in k.lower():
+#             print(e[0],k)
+#         #sprawdź czy szukana fraza pojawia sie w nazwie tego katalogu...
+
+#
+# import os
+# szukane='oRaClE'
+# poczatek='e:\\'
+# for e in os.walk(poczatek):
+#     katalogi=e[1]
+#     #print(e[0],'katalogi:',e[1])
+#     for k in katalogi:
+#         if szukane.lower() in k.lower():
+#             print(e[0]+"\\"+k)
+#         #sprawdź czy szukana fraza pojawia sie w nazwie tego katalogu...
+
+
+
+
+# import os
+# szukane='oRaClE'
+# poczatek='e:\\'
+# for e in os.walk(poczatek):
+#     katalogi=e[1]
+#     #print(e[0],'katalogi:',e[1])
+#     for k in katalogi:
+#         if szukane.lower() in k.lower():
+#             print(os.path.join(e[0],k))
         #sprawdź czy szukana fraza pojawia sie w nazwie tego katalogu...
 
+#
+# import os
+# szukane='oRaClE'
+# poczatek='e:\\'
+# for e in os.walk(poczatek):
+#     katalogi=e[1]
+#     for k in katalogi:
+#         if szukane.lower() in k.lower():
+#             print(os.path.join(e[0],k))
+#     pliki=e[2]
+#     for p in pliki:
+#         if szukane.lower() in p.lower():
+#             print(os.path.join(e[0],p))
+
+#
+# import os
+# szukane='oRaClE'
+# poczatek='e:\\'
+# for e in os.walk(poczatek):
+#     for k in e[1]:
+#         if szukane.lower() in k.lower(): print(os.path.join(e[0],k))
+#     for p in e[2]:
+#         if szukane.lower() in p.lower(): print(os.path.join(e[0],p))
+
+
+# import os
+# szukane=input('podaj szukaną frazę:')
+# poczatek=input('podaj ścieżkę początkową:')
+# for e in os.walk(poczatek):
+#     for k in e[1]:
+#         if szukane.lower() in k.lower(): print(os.path.join(e[0],k))
+#     for p in e[2]:
+#         if szukane.lower() in p.lower(): print(os.path.join(e[0],p))
+
+import os
+szukane=input('podaj szukaną frazę:\n')
+poczatek=input('podaj ścieżkę początkową:\n')
+for e in os.walk(poczatek):
+    for k in e[1]:
+        if szukane.lower() in k.lower(): print(os.path.join(e[0],k))
+    for p in e[2]:
+        if szukane.lower() in p.lower(): print(os.path.join(e[0],p))
