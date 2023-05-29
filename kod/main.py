@@ -491,3 +491,40 @@
 #Wygeneruj listę 20 elementów losowych liczbowych w zakresie 1-100
 #Stwórz dwie nowe listy. Do jednej skopiuj elementy wieksze od 50,
 #a do drugiej mniejsze bądź równe 50. Wszystkie trzy listy wydrukuj.
+
+#przetworzone_nieparzyste=[x*1000 for x in dane if x%2==1]
+
+# import random
+# losowe=[random.randint(1,100) for _ in range(20)]
+# print(losowe)
+# male=[x for x in losowe if x<=50]
+# duze=[x for x in losowe if x>50]
+# print('male=',male)
+# print('duze=',duze)
+
+# linia="2;Arnold;Boczek;1.65;120"
+# print(linia)
+# lista=linia.split(';')
+# print(lista)
+
+#
+# for linia in open('data.csv',encoding='utf-8'):
+#     print(linia.strip().split(';'))
+#
+# for linia in open('data.csv',encoding='utf-8'):
+#     lista=linia.strip().split(';')
+#     print(lista[2])
+
+#
+# print('hajs '*1000)
+
+#
+# for linia in open('data.csv',encoding='utf-8'):
+#     lista=linia.strip().split(';')
+#     print(lista)
+#     print(lista[2].upper())
+#     wzrost=lista[3]
+#     print(float(wzrost)*2)
+
+#8. Napisz program który z pliku data.csv
+# wyświetli powiekszone imiona i nazwiska oraz wzrost i masę
