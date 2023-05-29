@@ -528,3 +528,24 @@
 
 #8. Napisz program który z pliku data.csv
 # wyświetli powiekszone imiona i nazwiska oraz wzrost i masę
+
+# for linia in open('data.csv',encoding='utf-8'):
+#     lista=linia.strip().split(';')
+#     print(lista[1].upper(),lista[2].upper(),lista[3],lista[4])
+
+#Przerwa obiadowa 13:20
+
+#9. Korzystajac z list skladanych zaladuj do listy zawartosc pliku data.csv
+# w taki sposób   by linie oczyścic z bialych znaków i rozbić na listy.
+# Każdy z elementów listy sam   powinien byc listą.
+# Następnie przeiteruj po wyniku i wyświetl wszystkie elementy listy   linia po linii.
+
+wynik=[]
+for linia in open('data.csv',encoding='utf-8'):
+    lista=linia.strip().split(';')
+    wynik.append(lista)
+
+for w in wynik:
+    print(w)
+
+print(wynik)
