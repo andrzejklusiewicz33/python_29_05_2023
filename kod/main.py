@@ -269,10 +269,57 @@
 # print(x,y)
 
 #lista=[]
-
-import random
-print(random.random())
-print(random.randint(1,100))
+#
+# import random
+# print(random.random())
+# print(random.randint(1,100))
 
 #3. Stwórz dwie listy. Każda z list ma zawierać 10 liczb losowych z zakresu 1-10.
 # Połącz te dwie listy do jednej i wyswietl na konsoli (extend albo *lista)
+
+#
+# import random
+# l1=[]
+# l2=[]
+# for x in range(10):
+#     l1.append(random.randint(1,10))
+#     l2.append(random.randint(1, 10))
+#
+# print(l1)
+# print(l2)
+
+#
+# import random
+# l1=[]
+# l2=[]
+# for _ in range(10):
+#     l1.append(random.randint(1,10))
+#     l2.append(random.randint(1, 10))
+#
+# print(l1)
+# print(l2)
+
+
+# import random
+# l1=[]
+# l2=[]
+# for _ in range(10):
+#     l1.append(random.randint(1,10))
+#     l2.append(random.randint(1, 10))
+#
+# print(l1)
+# print(l2)
+# suma=[*l1,*l2]
+# print(suma)
+
+# import random
+# l1=[]
+# l2=[]
+# for _ in range(10):
+#     l1.append(random.randint(1,10))
+#     l2.append(random.randint(1, 10))
+#
+# print(l1)
+# print(l2)
+# l1.extend(l2)
+# print(l1)
