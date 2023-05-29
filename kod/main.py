@@ -73,3 +73,13 @@ print(pow(2,10))
 
 #1. Napisz kod który umieści w liście 10 kolejnych potęg liczby 2.
 # Następnie przeiteruj po tej liście i każdy z jej elementów wyświetl na konsoli w osobnej linii.
+
+lista=[]
+
+for x in range(1,11):
+    print(x)
+
+print(pow(2,10))
+
+for e in lista:
+    print(e)
