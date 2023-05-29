@@ -908,3 +908,123 @@
 #12. Wczytaj do listy list wiersze z pliku data.csv.
 # Dane posortuj po masie malejąco i wyswietl linia po linii na konsoli.
 
+# def get_data(file_name,div=';',enc='utf-8'):
+#     return [linia.strip().split(div) for linia in open(file_name,encoding=enc) if len(linia.strip())>0]
+#
+# result=get_data('data.csv')
+#
+# result.sort(key=lambda e:float(e[4]),reverse=True)
+#
+# for r in result:
+#     print(r)
+
+#
+# import operator
+# def get_data(file_name,div=';',enc='utf-8'):
+#     return [linia.strip().split(div) for linia in open(file_name,encoding=enc) if len(linia.strip())>0]
+#
+# result=get_data('data.csv')
+#
+# result.sort(key=operator.itemgetter(4),reverse=True) #sortowanie alfabetyczne...
+#
+# for r in result:
+#     print(r)
+
+#
+# import my_tools
+# data=my_tools.get_data('data.csv')
+# print(data)
+
+#
+# import my_tools as mt
+# data=mt.get_data('data.csv')
+# print(data)
+#
+# lista=['siała','baba','mak']
+# if 'baba' in lista:
+#     print('jest')
+# else:
+#     print('nie ma')
+
+
+# lista=['siała','baba','mak']
+# if 'ba' in lista:
+#     print('jest')
+# else:
+#     print('nie ma')
+
+# string='siała baba mak'
+# if 'ba' in string:
+#     print('jest')
+# else:
+#     print('nie ma')
+
+# lista=['siała','baba','mak','bardzo lubię pierogi']
+# for e in lista:
+#     if 'ba' in e:
+#         print(f'jest w {e}')
+#     else:
+#         print(f'nie ma w {e}')
+#
+# lista=['siała','baba','mak','bardzo lubię pierogi']
+# print(type(lista))
+# for e in lista:
+#     if 'ba' in e:
+#         print(f'jest w {e}')
+#     else:
+#         print(f'nie ma w {e}')
+
+#
+# krotka=('siała','baba','mak','bardzo lubię pierogi')
+# print(type(krotka))
+# for e in krotka:
+#     if 'ba' in e:
+#         print(f'jest w {e}')
+#     else:
+#         print(f'nie ma w {e}')
+#
+# cos='Andrzej Klusiewicz'
+# print(cos)
+# print(cos.lower())
+# print(cos.upper())
+#
+# szukane='Ba'
+# krotka=('siała','baba','mak','bardzo lubię pierogi')
+# print(type(krotka))
+# for e in krotka:
+#     if szukane.lower() in e.lower():
+#         print(f'jest w {e}')
+#     else:
+#         print(f'nie ma w {e}')
+#
+# szukane='Ba'
+# krotka=('siała','baba','mak','bardzo lubię pierogi')
+# print(type(krotka))
+# for e in krotka:
+#     if szukane.upper() in e.upper():
+#         print(f'jest w {e}')
+#     else:
+#         print(f'nie ma w {e}')
+#
+# import os
+# os.mkdir('d:\\nowy')
+#
+# import os
+# for e in os.walk('e:\\'):
+#     print(e[0],e[1],e[2])
+
+
+# import os
+# for e in os.walk('e:\\'):
+#     print(f'wchodzę do {e[0]}')
+#     katalogi=e[1]
+#     print('katalogi w tym folderze:')
+#     for k in katalogi:
+#         print('######',k)
+
+#13.     • Napisz wyszukiwarkę plików która przyjmie od użytkownika szukaną frazę
+# i katalog startowy. Wyszukiwarka ma wyswietlić wszystkie pliki i katalogi zawierajace
+# w nazwie szukaną frazę - wraz ze ścieżkami. Wyszukiwarka ma być nieczuła na wielkość liter
+#
+# imie=input('podaj imię:')
+# print(f'Hello {imie}')
