@@ -323,3 +323,38 @@
 # print(l2)
 # l1.extend(l2)
 # print(l1)
+
+#przerwa do 11:46
+#
+# lista=[
+#     [1,2],
+#     [3,4],
+#     ['lubię','pierogi']
+# ]
+#
+# for e in lista:
+#     print(e)
+#
+# print('---------------------')
+# print(lista)
+# print(lista[2])
+# podlista=lista[2]
+# print(podlista[1])
+# print(lista[2][1])
+
+# lista=[]
+# podlista=[1,2,3]
+# lista.append(podlista)
+# print(lista)
+#
+# lista=[]
+# for x in range(1,11):
+#     podlista=[x,x*100]
+#     lista.append(podlista)
+#
+# print(lista)
+# for e in lista:
+#     print(e)
+
+#4. Korzystajac z petli stworz liste zawierajaca elementy same bedace listami.
+# Kazdy taki element ma zawierac numer potegi oraz wartosc tej potegi dla liczby 2.
