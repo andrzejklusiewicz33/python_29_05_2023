@@ -572,3 +572,132 @@
 # masa='72'
 # bmi=round(float(masa)/pow(float(wzrost),2),2)
 # print(bmi)
+#
+# for linia in open('data.csv',encoding='utf-8'):
+#     lista=linia.strip().split(';')
+#     bmi=round(float(lista[4])/pow(float(lista[3]),2),2)
+#     print(lista,bmi)
+#
+#
+# for linia in open('data.csv',encoding='utf-8'):
+#     lista=linia.strip().split(';')
+#     bmi=round(float(lista[4])/pow(float(lista[3]),2),2)
+#     print(*lista,bmi)
+
+
+
+# for linia in open('data.csv',encoding='utf-8'):
+#     lista=linia.strip().split(';')
+#     bmi=round(float(lista[4])/pow(float(lista[3]),2),2)
+#     lista.append(bmi)
+#     print(lista)
+
+# for linia in open('data.csv',encoding='utf-8'):
+#     lista=linia.strip().split(';')
+#     #bmi=round(float(lista[4])/pow(float(lista[3]),2),2)
+#     #lista.append(bmi)
+#     print(lista[3],type(lista[3]))
+#
+# def get_data():
+#     return [linia.strip().split(';') for linia in open('data.csv',encoding='utf-8') if len(linia.strip())>0]
+#
+# for e in get_data():
+#     print(e)
+
+#
+# def get_data():
+#     return [linia.strip().split(';') for linia in open('data.csv',encoding='utf-8') if len(linia.strip())>0]
+#
+# data=get_data()
+# for d in get_data():
+#     print(*d,round(float(d[4])/pow(float(d[3]),2),2))
+#
+
+#SOLID
+#DRY
+
+# def bmi(w,m):
+#     return round(float(m)/pow(float(w),2),4)
+
+# def get_data():
+#     return [linia.strip().split(';') for linia in open('data.csv',encoding='utf-8') if len(linia.strip())>0]
+#
+# data=get_data()
+# for d in get_data():
+#     print(*d,bmi(d[3],d[4]))
+
+#Hermetyczne, generyczne i skalowalne
+#
+# def bmi(w,m):
+#     return round(float(m)/pow(float(w),2),4)
+# def get_data(file_name,div=';',enc='utf-8'):
+#     return [linia.strip().split(div) for linia in open(file_name,encoding=enc) if len(linia.strip())>0]
+#
+# data=get_data('data.csv')
+# for d in data:
+#     print(d)
+
+
+# lista=[5,2,7,1,3,4,9,1,1,1,1,3]
+# print(lista.count(1))
+# print(lista.index(7))
+# print(len(lista))
+# if 1111111 in lista:
+#     print('jest')
+# else:
+#     print('nie ma')
+
+# lista=[5,2,7,1,3,4,9,1,1,1,1,3]
+# for e in lista:
+#     print(e)
+#
+# for x in range(1,len(lista)):
+#     print(lista[x])
+
+#numpy, pandas
+
+# lista=[5,2,7,1,3,4,9,1,1,1,1,3]
+# print(len(lista),max(lista),min(lista),sum(lista),sum(lista)/len(lista))
+#11.
+
+
+#import matplotlib.pyplot
+#
+# lista=[5,2,7,1,3,4,9,1,1,1,1,3]
+# lista.sort()
+# print(lista)
+
+#
+# lista=[5,2,7,1,3,4,9,1,1,1,1,3]
+# lista.sort()
+# lista.reverse()
+# print(lista)
+
+
+# lista=[5,2,7,1,3,4,9,1,1,1,1,3]
+# lista.sort(reverse=True)
+# print(lista)
+#
+# lista=[5,2,7,1,3,4,9,1,1,1,1,3]
+# posortowane=sorted(lista)
+# print(posortowane)
+
+#
+# krotka=(5,2,7,1,3,4,9,1,1,1,1,3)
+# posortowane=sorted(krotka)
+# print(posortowane)
+
+#
+# lista=[5,2,7,1,3,4,9,1,1,1,1,3]
+# posortowane=sorted(lista)
+# print(posortowane)
+# odwrocone=list(reversed(posortowane))
+# print(odwrocone)
+
+
+# lista=[5,2,7,1,3,4,9,1,1,1,1,3]
+# posortowane=sorted(lista,reverse=True)
+# print(posortowane)
+
+#11. Wygeneruj listę 10 elementów o losowej wartości liczbowej, posortuj listę
+# i wyświetl jej zawartość linia po linii
