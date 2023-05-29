@@ -701,3 +701,210 @@
 
 #11. Wygeneruj listę 10 elementów o losowej wartości liczbowej, posortuj listę
 # i wyświetl jej zawartość linia po linii
+#
+# import random
+# losowe=[random.randint(1,10) for _ in range(10)]
+# print(losowe)
+# kopia_posortowana=sorted(losowe)
+# print(kopia_posortowana)
+
+#
+# import random
+# losowe=[random.randint(1,10) for _ in range(10)]
+# print(losowe)
+# kopia_posortowana=sorted(losowe)
+# print(kopia_posortowana)
+
+#
+# import random
+# losowe=[random.randint(1,10) for _ in range(10)]
+# losowe.sort()
+# print(losowe)
+
+#
+# import random
+# losowe=[random.randint(1,10) for _ in range(10)]
+# losowe.sort(reverse=True)
+# print(losowe)
+
+# def get_random_list(range_start,range_end,count):
+#     import random
+#     return [random.randint(range_start,range_end) for _ in range(count)]
+#
+# losowe=get_random_list(1,10,100)
+# losowe.sort(reverse=True)
+# print(losowe)
+
+#przerwa do 14:40
+
+# lista=[
+#     [1,'B'],
+#     [3,'A'],
+#     [2,'C']
+# ]
+#
+# lista.sort()
+# print(lista)
+#
+# import operator
+#
+# lista=[
+#     [1,'B'],
+#     [3,'A'],
+#     [2,'C']
+# ]
+#
+# lista.sort(key=operator.itemgetter(1))
+# print(lista)
+
+
+#
+# import operator
+#
+# lista=[
+#     [1,'B'],
+#     [3,'A'],
+#     [2,'C']
+# ]
+#
+# kopia=sorted(lista,key=operator.itemgetter(1))
+# print(kopia)
+
+# class Person:
+#     first_name=None
+#     last_name=None
+#     def __init__(self):
+#         print('whatever')
+#
+# p=Person()
+#
+# class Person:
+#     first_name=None
+#     last_name=None
+#     def __init__(self,fn,ln):
+#         print('whatever')
+#         self.first_name=fn
+#         self.last_name=ln
+#
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# p=Person('Andrzej','Klusiewicz')
+# print(p)
+
+#SQLAlchemy
+
+# class Person:
+#     first_name=None
+#     last_name=None
+#     def __init__(self,fn,ln):
+#         print('whatever')
+#         self.first_name=fn
+#         self.last_name=ln
+#
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# p=Person('Andrzej','Klusiewicz')
+# print(p)
+
+#
+# class Person:
+#     first_name=None
+#     last_name=None
+#     def __init__(self,fn,ln):
+#         print('whatever')
+#         self.first_name=fn
+#         self.last_name=ln
+#
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# lista=[
+#     Person('Andrzej','Klusiewicz'),
+#     Person('Tomasz','Burczymucha'),
+#     Person('Jan','Zieliński')
+# ]
+#
+# kopia=sorted(lista)
+# print(kopia)
+
+#
+# import operator
+# class Person:
+#     first_name=None
+#     last_name=None
+#     def __init__(self,fn,ln):
+#         self.first_name=fn
+#         self.last_name=ln
+#
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# lista=[
+#     Person('Andrzej','Klusiewicz'),
+#     Person('Tomasz','Burczymucha'),
+#     Person('Jan','Zieliński')
+# ]
+#
+# kopia=sorted(lista,key=operator.itemgetter(1)) #fuuuuuu to nie ma prawa zadziałać
+# print(kopia)
+
+
+#
+# import operator
+# class Person:
+#     first_name=None
+#     last_name=None
+#     def __init__(self,fn,ln):
+#         self.first_name=fn
+#         self.last_name=ln
+#
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# lista=[
+#     Person('Andrzej','Klusiewicz'),
+#     Person('Tomasz','Burczymucha'),
+#     Person('Jan','Zieliński')
+# ]
+#
+# kopia=sorted(lista,key=lambda x:x.last_name)
+# for k in kopia:
+#     print(k)
+#
+#
+# import operator
+# lista=[
+#     [1,'B'],
+#     [3,'A'],
+#     [2,'C']
+# ]
+# lista.sort(key=operator.itemgetter(1))
+# for k in lista:
+#     print(k)
+
+
+#
+# lista=[
+#     [1,'B'],
+#     [3,'A'],
+#     [2,'C']
+# ]
+# lista.sort(key=lambda e:e[1])
+# for k in lista:
+#     print(k)
+
+#
+# lista=[
+#     [1,'B'],
+#     [3,'A'],
+#     [2,'C']
+# ]
+# lista.sort(key=lambda koza:koza[1])
+# for k in lista:
+#     print(k)
+
+#12. Wczytaj do listy list wiersze z pliku data.csv.
+# Dane posortuj po masie malejąco i wyswietl linia po linii na konsoli.
+
