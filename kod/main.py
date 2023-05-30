@@ -1607,3 +1607,65 @@
 
 #19. Stwórz generator który będzie podawał nieskończenie wiele liczb parzystych.
 # Przetestuj go pobierając z niego kolejne wartości i wyświetlając je na konsoli.
+#
+# def parzyste(): #fuuuuuu edition
+#     x=0
+#     while True:
+#         x+=1
+#         if x%2==0:
+#             yield x
+#
+# for p in parzyste():
+#     print(p)
+
+
+#
+# def parzyste(): #fuuuuuu edition
+#     x=0
+#     while True:
+#         x+=2
+#         yield x
+#
+# for p in parzyste():
+#     print(p)
+
+
+#x=0
+# for i in range(10):
+#     print(i)
+#
+# x=0
+# while x<100:
+#     x+=1
+#     print(x)
+#
+
+
+x=0
+# while 1==1:
+#     x+=1
+#     print(x)
+
+# while True:
+#     x+=1
+#     print(x)
+
+
+#przerwa obiadowa do 13:25
+
+#pytest
+
+#pip install pytest
+
+#Stworz w osobnym module funkcje ktora bedzie zwracala liste 100 losowych liczb z zakresu 1-100.
+# Dodaj testy jednostkowe ktore beda sprawdzaly czy funkcja zwrocila 100 elementow,
+# czy wszystkie mieszcza sie w zakresie 1-100 i czy wszystkie zwracane wartosci sa
+# liczbami calkowitymi
+
+
+X=1.2
+print(type(X))
+if type(X)==int:
+    print('to jest liczba całkowita')
+elif type(X)==float:
+    print('to jest liczba zmiennoprzecinkowa')
