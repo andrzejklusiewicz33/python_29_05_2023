@@ -1430,26 +1430,136 @@
 
 #algorytmy, struktury danych i techniki programowania
 
-
-import time
-start=time.time()
-all=open('tadzio.txt',encoding='utf-8').read().lower()
-for nw in [',','.','!','?','(',')',':',';','/','-','…','—']:
-    all=all.replace(nw,'')
-dct=dict()
-for w in all.split():
-    if w in dct.keys():
-        #dct[w]=dct[w]+1 #jest już takie słowo w słowniku
-        dct[w]+=1
-    else:
-        dct[w]=1 #nie ma takiego słowa w słowniku
-result=[]
-for k in dct:
-    print(k,dct[k])
-    krotka=(k,dct[k])
-
-#PRZEPAKOWANIE SŁOWNIKA DO LISTY LIST (LUB LISTY KROTEK)
-#POSORTOWANIE
-end=time.time()
-print(f'czas trwania {end-start}s')
+#
+# import time
+# start=time.time()
+# all=open('tadzio.txt',encoding='utf-8').read().lower()
+# for nw in [',','.','!','?','(',')',':',';','/','-','…','—']:
+#     all=all.replace(nw,'')
+# dct=dict()
+# for w in all.split():
+#     if w in dct.keys():
+#         #dct[w]=dct[w]+1 #jest już takie słowo w słowniku
+#         dct[w]+=1
+#     else:
+#         dct[w]=1 #nie ma takiego słowa w słowniku
+# result=[]
+# for k in dct:
+#     krotka=(k,dct[k])
+#     result.append(krotka)
+# result.sort(key=lambda x:x[1], reverse=True)
+# for r in result:
+#     print(r)
+# end=time.time()
+# print(f'czas trwania {end-start}s')
 #print(words)
+
+
+
+
+# all=open('tadzio.txt',encoding='utf-8').read().lower()
+# for nw in [',','.','!','?','(',')',':',';','/','-','…','—']: all=all.replace(nw,'')
+# dct=dict()
+# for w in all.split():
+#     if w in dct.keys():
+#         dct[w]+=1
+#     else:
+#         dct[w]=1
+# result=[]
+# for k in dct:
+#     result.append( (k,dct[k]) )
+# result.sort(key=lambda x:x[1], reverse=True)
+# for r in result:  print(r)
+
+
+#import this
+
+#przerwa do 11:58
+# import time
+# def zamulator(x):
+#     time.sleep(1)
+#     return x*2
+#
+# for i in range(1,4):
+#     print(zamulator(i))
+#
+# import functools
+# import time
+#
+# @functools.lru_cache(maxsize=10)
+# def zamulator(x):
+#     time.sleep(1)
+#     return x*2
+#
+# start=time.time()
+# for _ in range(10):
+#     for i in range(1,4):
+#         print(zamulator(i))
+# koniec=time.time()
+# print(f'czas={koniec-start}s')
+
+#
+# def funkcja(x,y):
+#     result=x+y
+#     return result
+
+# def get_big():
+#     result=[]
+#     x=0
+#     while True:
+#         x+=1
+#         result.append(f'element numer {x}')
+#     return result
+#
+# data=get_big()
+#
+# import time
+# def get_list():
+#     result=[]
+#     for x in range(10):
+#         time.sleep(1)
+#         result.append(x)
+#     return result
+#
+# for g in get_list():
+#     print(g)
+#
+#
+# import time
+# def get_list():
+#     for x in range(10):
+#         time.sleep(1)
+#         yield x
+#
+# for g in get_list():
+#     print(g)
+
+
+#
+# def get_big():
+#     x=0
+#     while True:
+#         x+=1
+#         yield f'element numer {x}'
+#
+# for g in get_big():
+#     print(g)
+#
+# import time
+# import requests
+# def ceny_zlota():
+#     while True:
+#         time.sleep(1)
+#         response=requests.get('http://api.nbp.pl/api/cenyzlota')
+#         if response.status_code==200:
+#             data=response.json()
+#             print(data)
+#             yield data[0]['cena']
+#
+# for cz in ceny_zlota():
+#     print(cz)
+
+
+#18. Stworz generator ktory bedzie przyjmowal przez parametr ilosc elementow a nastepnie zwracal
+# elementy o tresci 'element o indeksie x'( gdzie x bedzie numerem podawanego elementu)
+# czekajac 1 sekunde przed zwrotem kazdego elementu.
