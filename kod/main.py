@@ -1806,9 +1806,19 @@ import time
 # plik.write('dupa3\n')
 # plik.close()
 
+#
+# with open('log.log',encoding='utf-8',mode='w') as plik:
+#     plik.write('dupa1\n')
+#     plik.write('dupa2\n')
+#     plik.write('dupa3\n')
+# print('koniec')
 
-with open('log.log',encoding='utf-8',mode='w') as plik:
-    plik.write('dupa1\n')
-    plik.write('dupa2\n')
-    plik.write('dupa3\n')
-print('koniec')
+import my_tools
+def config(**kwargs):
+    data=my_tools.get_data('config.conf',div='=')
+    di=dict(data)
+    print(di)
+    for k in kwargs:
+        pass
+
+config(color='red',new_settings='whatever')
