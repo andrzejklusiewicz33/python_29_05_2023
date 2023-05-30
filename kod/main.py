@@ -1756,3 +1756,59 @@ import time
 #22. Stwórz funkcję która przyjmie przez argument mnożnik oraz elementy typu args.
 # Funkcja ma dla kazdego elementu typu args wyswietlic na konsoli wynik jego
 # mnożenia przez mnożnik
+#
+# def fun(mnoznik,*liczby):
+#     for l in liczby:
+#         print(l*mnoznik)
+#
+#
+# fun(1000,1,2,3,4)
+
+#przerwa do 14:43
+
+# def fun(param1,param2):
+#     print('param1=',param1)
+#     print('param2=',param2)
+#
+# fun(1,2)
+# fun(param1=1,param2=2)
+# fun(param2=2,param1=1)
+
+
+# def fun(**kwargs):
+#     print(kwargs)
+#
+# fun(param1=1,param2=2,nowy_param=3)
+
+# def fun(**kwargs):
+#     print(kwargs)
+#     for k in kwargs:
+#         print(k,kwargs[k])
+#
+# fun(param1=1,param2=2,nowy_param=3)
+#
+
+#config(encoding='utf-8', color='red')
+
+#23. Stworz funkcje "config" ktora bedzie otrzymywala argumenty kwargs bedace ustawieniami.
+# Funkcja ta ma zapisac podane argumenty do pliku config.csv w 2 kolumnach z czego
+# pierwsza jest nazwa argumentu a druga jego wartoscia.
+# Jesli dane argument juz istnieje w pliku to trzeba bedzie tylko zaktualizowac
+# jego wartosc, jesli jeszcze go nie ma to trzeba go bedzie dodac do pliku.
+
+#1. najpierw wczytaj konfigurację do słownika
+#2. następnie zaktualizuj słownik o nowe ustawienia z parametrów
+#3. Na koniec zapisz słownik do pliku z konfiguracją
+#
+# plik=open('log.log',encoding='utf-8',mode='w')
+# plik.write('dupa1\n')
+# plik.write('dupa2\n')
+# plik.write('dupa3\n')
+# plik.close()
+
+
+with open('log.log',encoding='utf-8',mode='w') as plik:
+    plik.write('dupa1\n')
+    plik.write('dupa2\n')
+    plik.write('dupa3\n')
+print('koniec')
