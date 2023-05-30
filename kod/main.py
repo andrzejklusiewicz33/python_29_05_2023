@@ -1574,5 +1574,36 @@
 # for g in generator(10):
 #     print(g)
 
+#
+# import time
+# def generator(ile):
+#     for x in range(1,ile+1):
+#         time.sleep(1)
+#         yield f'element o numerze {x}'
+#
+# g=generator(10)
+# print(next(g))
+# print(next(g))
+# print(next(g))
+#
+# for g in generator(10):
+#     print(g)
+
+#
+# import time
+# def generator(ile):
+#     for x in range(1,ile+1):
+#         time.sleep(1)
+#         yield f'element o numerze {x}'
+# #
+# # g=generator(10)
+# # for _ in range(3):
+# #     print(next(g))
+#
+#
+# g=generator(10)
+# for _ in range(30):
+#     print(next(g))
+
 #19. Stwórz generator który będzie podawał nieskończenie wiele liczb parzystych.
 # Przetestuj go pobierając z niego kolejne wartości i wyświetlając je na konsoli.
