@@ -1443,8 +1443,11 @@ for w in all.split():
         dct[w]+=1
     else:
         dct[w]=1 #nie ma takiego słowa w słowniku
+result=[]
 for k in dct:
     print(k,dct[k])
+    krotka=(k,dct[k])
+
 #PRZEPAKOWANIE SŁOWNIKA DO LISTY LIST (LUB LISTY KROTEK)
 #POSORTOWANIE
 end=time.time()
