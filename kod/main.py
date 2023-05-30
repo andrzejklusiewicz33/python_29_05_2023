@@ -1113,11 +1113,40 @@
 #     for p in e[2]:
 #         if szukane.lower() in p.lower(): print(os.path.join(e[0],p))
 
-import os
-szukane=input('podaj szukaną frazę:\n')
-poczatek=input('podaj ścieżkę początkową:\n')
-for e in os.walk(poczatek):
-    for k in e[1]:
-        if szukane.lower() in k.lower(): print(os.path.join(e[0],k))
-    for p in e[2]:
-        if szukane.lower() in p.lower(): print(os.path.join(e[0],p))
+# import os
+# szukane=input('podaj szukaną frazę:\n')
+# poczatek=input('podaj ścieżkę początkową:\n')
+# for e in os.walk(poczatek):
+#     for k in e[1]:
+#         if szukane.lower() in k.lower(): print(os.path.join(e[0],k))
+#     for p in e[2]:
+#         if szukane.lower() in p.lower(): print(os.path.join(e[0],p))
+#
+# import math
+# import matplotlib.pyplot as plt
+# lista1=[math.sin(e) for e in range(1,30)]
+# lista2=[math.cos(e) for e in range(1,30)]
+# plt.plot(lista1,'r--',label='niebieska kreska')
+# plt.plot(lista2,'g:',label='pomarańczowa kreska')
+# plt.xlabel('wartości X')
+# plt.ylabel('wartości sin i cos')
+# plt.grid()
+# plt.legend()
+# plt.savefig('wykres.png')
+# plt.show()
+
+
+# import math
+# import matplotlib.pyplot as plt
+# lista1=[math.sin(e) for e in range(1,30)]
+# plt.plot(lista1)
+# plt.show()
+#
+# import math
+# import matplotlib.pyplot as plt
+# plt.plot([math.sin(e) for e in range(1,30)])
+# plt.show()
+
+#14. Rzuć na wykres dwie serie posiadające po 50 elementów
+#o wartościach losowych z zakresu 1-100. Zadbaj o legendę
+#i etykiety osi. Dodaj też siatkę.
