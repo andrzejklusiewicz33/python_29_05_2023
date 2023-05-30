@@ -1663,9 +1663,60 @@ x=0
 # liczbami calkowitymi
 
 
-X=1.2
-print(type(X))
-if type(X)==int:
-    print('to jest liczba całkowita')
-elif type(X)==float:
-    print('to jest liczba zmiennoprzecinkowa')
+# X=1.2
+# print(type(X))
+# if type(X)==int:
+#     print('to jest liczba całkowita')
+# elif type(X)==float:
+#     print('to jest liczba zmiennoprzecinkowa')
+
+# import my_tools as mt
+# print(mt.get_random_list())
+
+# #
+# import time
+#
+# def mierzczas(koza):
+#     def wewnetrzna(*args,**kwargs):
+#         start=time.time()
+#         koza()
+#         koniec=time.time()
+#         print(f'czas trwania {koniec-start}s')
+#     return wewnetrzna
+#
+# @mierzczas
+# def fun():
+#     time.sleep(3)
+#     print('koniec funkcji')
+#
+# fun()
+
+
+#
+# def funkcja(x,y):
+#     print('x=',x)
+#     print('y=',y)
+#
+# funkcja(1,2)
+
+
+# def funkcja(*args):
+#     print(args,type(args))
+#     print(args,'|',*args)
+#
+# funkcja(1,2,3,'Kalafior')
+
+
+# def funkcja(*params):
+#     print(params,type(params))
+#     print(params,'|',*params)
+
+#funkcja(1,2,3,'Kalafior')
+
+# def funkcja(*params):
+#     for p in params:
+#         print(p)
+#
+# funkcja(1,2,3,'Kalafior')
+
+#20. Stwórz funkcję która wydrukuje na konsoli sumę wartości przekazanych do niej jako *args
