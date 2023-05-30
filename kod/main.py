@@ -1150,3 +1150,7 @@
 #14. Rzuć na wykres dwie serie posiadające po 50 elementów
 #o wartościach losowych z zakresu 1-100. Zadbaj o legendę
 #i etykiety osi. Dodaj też siatkę.
+
+#import matplotlib.pyplot as plt
+
+#z konsoli:  import matplotlib.pyplot as plt
