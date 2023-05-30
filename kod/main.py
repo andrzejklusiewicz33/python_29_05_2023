@@ -1720,3 +1720,13 @@ x=0
 # funkcja(1,2,3,'Kalafior')
 
 #20. Stwórz funkcję która wydrukuje na konsoli sumę wartości przekazanych do niej jako *args
+#
+# def fun(*args):
+#     print(sum(args))
+#
+# fun(1,2,3,4,5,6,7)
+
+#21. Stwórz funkcję która przyjmie nieokreśloną liczbę elementów przez argument,
+# a następnie wypisze na konsoli ilość otrzymanych elementów.
+# Poniżej informacji o ilości otrzymanych elementów wyświetl w osobnych
+# liniach każdy argument oraz jego typ.
