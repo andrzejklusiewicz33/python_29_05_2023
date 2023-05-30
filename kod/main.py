@@ -1730,3 +1730,29 @@ x=0
 # a następnie wypisze na konsoli ilość otrzymanych elementów.
 # Poniżej informacji o ilości otrzymanych elementów wyświetl w osobnych
 # liniach każdy argument oraz jego typ.
+import time
+# def fun(*args):
+#     for a in args:
+#         print(a,type(a))
+#
+# fun('nietoperz','toperz',1,3.14,[1,2,3])
+#
+# def fun(x,*args):
+#     pass
+#
+# fun(None,None)
+
+#
+# def fun(*args,x): #fuuuu
+#     pass
+#
+# fun(None,None)
+
+# def fun(x,*args):
+#     pass
+#
+# fun(None,None)
+
+#22. Stwórz funkcję która przyjmie przez argument mnożnik oraz elementy typu args.
+# Funkcja ma dla kazdego elementu typu args wyswietlic na konsoli wynik jego
+# mnożenia przez mnożnik
