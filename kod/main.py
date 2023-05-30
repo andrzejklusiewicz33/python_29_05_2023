@@ -1307,3 +1307,57 @@
 # color;black
 # Następnie wczytaj dane do słownika w ten sposób by pierwsza kolumna stanowila klucze a druga przypisane do nich
 # wartości. Przeiteruj po słowniku i wypisz klucze oraz przypisane do nich wartości
+#
+# import my_tools as mt
+# data=mt.get_data('config.conf',div='=')
+# config=dict()
+# for d in data:
+#     print('klucz=',d[0],'wartość=',d[1])
+#     config[d[0]]=d[1]
+#
+# print(config)
+# for k in config:
+#     print(k,config[k])
+#
+# print('=======')
+# print(config['encoding'])
+#print(config['dupa'])
+
+
+#
+# import my_tools as mt
+# config=dict(mt.get_data('config.conf',div='='))
+# print(config)
+# for k in config:
+#     print(k,config[k])
+
+#17. Napisz system który zwróci nam ilość wystąpień każdego ze słow w pliku w postaci listy krotek.
+# [  (slowo,ilosc_wystapien),(slowo,ilosc_wystapien)   ]. Nazwa pliku ma zostać przekazana przez zmienną.
+#    Wynik powinien byc posortowany malejąco wg ilosci wystapien
+#    a) odczytaj wszystkie linie z pliku i rozbij na słowa. Każde ze słów dodaj do osobnej listy słów.
+#       Zadbaj o usunięcie po drodze znaków specjalnych czyli kropek, przecinków, wykrzykników etc.
+#    b) stwórz słownik i dla każdego słowa w liście sprawdz czy istnieje juz wpis dotyczący tego słowa
+#       w słowniku. Jeśli nie ma to dodaj do słownika wpis o kluczu takim jak sprawdzane słowo i wartości 1
+#       dla ilości wystąpień. Jeśli takie słowo pojawia się już w kluczach słownika to trzeba zwiększyc wartośc o 1
+#    c) Przepakuj dane ze słownika do listy i posortuj.
+
+# tadeusz 1032
+# trawa 876
+# bal 500
+#http://andrzejklusiewicz.blogspot.com/
+#
+# for linia in open('tadzio.txt',encoding='utf-8'):
+#     print(linia)
+
+#Tadeusz
+#Tadeusz,
+
+all=open('tadzio.txt',encoding='utf-8').read().lower().replace(',','').replace('.','')
+not_wanted=[',','.',':']
+all=all.replace(',','')
+print(all)
+print('ile razy slowo:',all.count('tadeusz'))
+
+print(all.split())
+['tadeusz','drzewo','costam']
+
