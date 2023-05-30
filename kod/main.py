@@ -1352,12 +1352,31 @@
 #Tadeusz
 #Tadeusz,
 
-all=open('tadzio.txt',encoding='utf-8').read().lower().replace(',','').replace('.','')
-not_wanted=[',','.',':']
-all=all.replace(',','')
-print(all)
-print('ile razy slowo:',all.count('tadeusz'))
+# all=open('tadzio.txt',encoding='utf-8').read().lower().replace(',','').replace('.','')
+# not_wanted=[',','.',':']
+# all=all.replace(',','')
+# print(all)
+# print('ile razy slowo:',all.count('tadeusz'))
+#
+# print(all.split())
+# ['tadeusz','drzewo','costam']
 
-print(all.split())
-['tadeusz','drzewo','costam']
+#
+# all=open('tadzio.txt',encoding='utf-8').read().lower()
+# for nw in [',','.','!','?','(',')',':',';','/','-','…','—']:
+#     all=all.replace(nw,'')
+# words=all.split()
+# print(words)
 
+import time
+start=time.time()
+all=open('tadzio.txt',encoding='utf-8').read().lower()
+for nw in [',','.','!','?','(',')',':',';','/','-','…','—']:
+    all=all.replace(nw,'')
+words=all.split()
+for w in words:
+    #print(w,words.count(w))
+    c=words.count(w)
+end=time.time()
+print(f'czas trwania {end-start}s')
+#print(words)
