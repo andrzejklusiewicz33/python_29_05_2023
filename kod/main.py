@@ -1812,13 +1812,128 @@ import time
 #     plik.write('dupa2\n')
 #     plik.write('dupa3\n')
 # print('koniec')
+#
+# import my_tools
+# def config(**kwargs):
+#     data=my_tools.get_data('config.conf',div='=')
+#     di=dict(data)
+#     print(di)
+#     for k in kwargs:
+#         pass
+#
+# config(color='red',new_settings='whatever')
 
-import my_tools
-def config(**kwargs):
-    data=my_tools.get_data('config.conf',div='=')
-    di=dict(data)
-    print(di)
-    for k in kwargs:
-        pass
 
-config(color='red',new_settings='whatever')
+#
+# import my_tools
+# def config(**kwargs):
+#     data=my_tools.get_data('config.conf',div='=')
+#     print(data)
+#     di=dict(data)
+#     print(di)
+#     for k in kwargs:
+#         di[k]=kwargs[k]
+#     print(di)
+#     with open("config.conf",encoding='utf-8',mode='w') as file:
+#         for kk in di:
+#             file.write(f'{kk}={di[kk]}\n')
+#
+# config(color='red',new_settings='whatever')
+
+
+# def hello():
+#     print('hello!')
+# def odpal(fun):
+#     print(f'dzieki za funkcję: {fun.__name__}')
+#     for x in range(10):
+#         fun()
+#
+# odpal(hello)
+#print(hello)
+#
+# def hello():
+#     print('hello!')
+# def odpal(fun):
+#     print(f'dzieki za funkcję: {fun.__name__}')
+#     for x in range(10):
+#         fun()
+#
+# odpal(hello)
+
+#
+# def hello():
+#     print('hello!')
+#
+# def hello_first_name(first_name):
+#     print(f'hello {first_name}!')
+#
+#
+# def odpal(fun):
+#     print(f'dzieki za funkcję: {fun.__name__}')
+#     for x in range(10):
+#         fun()
+#
+# odpal(hello)
+
+#
+# def hello():
+#     print('hello!')
+#
+# def hello_first_name(first_name):
+#     print(f'hello {first_name}!')
+#
+#
+# def odpal_bezargumentowy(fun):
+#     print(f'dzieki za funkcję: {fun.__name__}')
+#     for x in range(10):
+#         fun()
+#
+#
+# def odpal_jednoargumentowy(fun,q):
+#     print(f'dzieki za funkcję: {fun.__name__}')
+#     for x in range(10):
+#         fun(q)
+#
+# odpal_bezargumentowy(hello)
+# odpal_jednoargumentowy(hello_first_name,'Andrzej')
+#
+#
+# def hello():
+#     print('hello!')
+#
+# def hello_first_name(first_name):
+#     print(f'hello {first_name}!')
+#
+#
+# def odpal(fun,*args):
+#     print(f'dzieki za funkcję: {fun.__name__}')
+#     for x in range(10):
+#         fun(*args)
+#
+# odpal(hello)
+# odpal(hello_first_name,'Andrzej')
+#
+# import time
+#
+# def hello():
+#     print('hello!')
+#
+# def odpal(f):
+#     time.sleep(2)
+#     f()
+#
+# odpal(hello)
+
+
+
+#24. Stwórz dwie funkcje - jedna ma zwracać powiększony tekst który otrzyma
+# przez argument, druga analogicznie ale pomniejszony.
+# Dodaj funkcję która będzie w stanie przyjąć przez argument inną funkcję
+# oraz ciąg tekstowy do obróbki który następnie po obrobieniu przez funkcję
+# podaną jako argument zostanie wyświetlony na konsoli
+
+def pomniejsz(text):
+    return text.lower()
+
+obrob(pomniejsz,'siala BABA mak')
+
