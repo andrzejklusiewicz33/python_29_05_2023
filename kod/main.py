@@ -1153,4 +1153,4 @@
 
 #import matplotlib.pyplot as plt
 
-#z konsoli:  import matplotlib.pyplot as plt
+#z konsoli:  pip install matplotlib
