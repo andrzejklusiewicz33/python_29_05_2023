@@ -1367,16 +1367,86 @@
 #     all=all.replace(nw,'')
 # words=all.split()
 # print(words)
+#
+# import time
+# start=time.time()
+# all=open('tadzio.txt',encoding='utf-8').read().lower()
+# for nw in [',','.','!','?','(',')',':',';','/','-','…','—']:
+#     all=all.replace(nw,'')
+# words=all.split()
+# for w in words:
+#     #print(w,words.count(w))
+#     c=words.count(w)
+# end=time.time()
+# print(f'czas trwania {end-start}s')
+# #print(words)
+#
+
+#210s
+
+
+#import time
+#
+# all=open('tadzio.txt',encoding='utf-8').read().lower()
+# for nw in [',','.','!','?','(',')',':',';','/','-','…','—']:
+#     all=all.replace(nw,'')
+# words=all.split()
+# print('ilość słów=',len(words))
+
+# import time
+# start=time.time()
+# all=open('tadzio.txt',encoding='utf-8').read().lower()
+# for nw in [',','.','!','?','(',')',':',';','/','-','…','—']:
+#     all=all.replace(nw,'')
+# words=all.split()
+# for w in words:
+#     c=words.count(w)
+# end=time.time()
+# print(f'czas trwania {end-start}s')
+# #print(words)
+
+# import matplotlib.pyplot as plt
+# data=[pow(x,2) for x in range(10000)]
+# plt.plot(data)
+# plt.show()
+#
+# import time
+# start=time.time()
+# all=open('tadzio.txt',encoding='utf-8').read().lower()
+# for nw in [',','.','!','?','(',')',':',';','/','-','…','—']:
+#     all=all.replace(nw,'')
+# dct=dict()
+# for w in all.split():
+#     if w in dct.keys():
+#         #dct[w]=dct[w]+1 #jest już takie słowo w słowniku
+#         dct[w]+=1
+#     else:
+#         dct[w]=1 #nie ma takiego słowa w słowniku
+# end=time.time()
+# print(f'czas trwania {end-start}s')
+# #print(words)
+
+#print(0.08/210)
+
+#algorytmy, struktury danych i techniki programowania
+
 
 import time
 start=time.time()
 all=open('tadzio.txt',encoding='utf-8').read().lower()
 for nw in [',','.','!','?','(',')',':',';','/','-','…','—']:
     all=all.replace(nw,'')
-words=all.split()
-for w in words:
-    #print(w,words.count(w))
-    c=words.count(w)
+dct=dict()
+for w in all.split():
+    if w in dct.keys():
+        #dct[w]=dct[w]+1 #jest już takie słowo w słowniku
+        dct[w]+=1
+    else:
+        dct[w]=1 #nie ma takiego słowa w słowniku
+for k in dct:
+    print(k,dct[k])
+#PRZEPAKOWANIE SŁOWNIKA DO LISTY LIST (LUB LISTY KROTEK)
+#POSORTOWANIE
 end=time.time()
 print(f'czas trwania {end-start}s')
 #print(words)
