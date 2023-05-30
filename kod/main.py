@@ -1154,3 +1154,66 @@
 #import matplotlib.pyplot as plt
 
 #z konsoli:  pip install matplotlib
+#
+# import matplotlib.pyplot as plt
+# help(plt.plot)
+
+#
+# def funkcja():
+#     '''To jest help do mojej funkcji.'''
+#     print('hello')
+#
+# help(funkcja)
+#
+# import matplotlib.pyplot as plt
+# import random
+# seria1=[random.randint(1,100) for _ in range(50)]
+# seria2=[random.randint(1,100) for _ in range(50)]
+# plt.plot(seria1,label='losowe 1')
+# plt.plot(seria2,label='losowe 2')
+# plt.legend()
+# plt.grid()
+# plt.show()
+
+#seaborn  - ladne wykresy
+#JSON API - Fast API
+#D3.JS - do wykresów dynamicznych (javascript)
+#Python DASH (WTf?) https://www.youtube.com/watch?v=hSPmj7mK6ng
+#https://dash.gallery/Portal/
+
+# lista=[1,1,1,1,1,2,2,2,2,2,2,2,3,3,3,3,3,3,3]
+# zbior={1,1,1,1,1,2,2,2,2,2,2,2,3,3,3,3,3,3,3}
+# slownik={"klucz1":1111,
+#          "klucz2":2222}
+# print(type(zbior))
+#
+# for x in range(100):
+#     zbior.add(4)
+# print(lista)
+# print(zbior)
+#
+# z1={1,2,3,4}
+# z2={3,4,5,6}
+# print('z1=',z1)
+# print('z2=',z2)
+# print('suma=',z1.union(z2))
+# print('część wspólna=',z1.intersection(z2))
+# print('z1-z2=',z1.difference(z2))
+# print('z2-z1=',z2.difference(z1))
+
+
+# lista=[1,1,1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,3,3]
+# print(lista)
+# zbior=set(lista)
+# print(zbior)
+# wynik=list(zbior)
+# print(wynik)
+
+# lista=[1,1,1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,3,3]
+# result=list(set(lista))
+# print(result)
+
+#15. Wygeneruj dwa zestawy, dodaj do nich po 20
+# (w przypadku duplikatów lista może być mniejsza niż
+# 20 elementów) losowych liczb z zakresu 1-40.
+# Wyswietl ich sumę, różnicę i część wspólną
