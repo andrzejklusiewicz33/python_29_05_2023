@@ -1217,3 +1217,93 @@
 # (w przypadku duplikatów lista może być mniejsza niż
 # 20 elementów) losowych liczb z zakresu 1-40.
 # Wyswietl ich sumę, różnicę i część wspólną
+#
+# import random
+# z1=set([random.randint(1,40) for _ in range(20)])
+# z2=set([random.randint(1,40) for _ in range(20)])
+# print(z1)
+# print(z2)
+
+
+
+# import random
+# z1={random.randint(1,40) for _ in range(20)}
+# z2= {random.randint(1,40) for _ in range(20)}
+# print(z1,type(z1))
+# print(z2,type(z2))
+# print('suma=',z1.union(z2))
+# print('część wspólna=',z1.intersection(z2))
+# print('z1-z2=',z1.difference(z2))
+# print('z2-z1=',z2.difference(z1))
+
+# import my_tools as mt
+# lista=set(mt.get_data("data.csv"))
+# for e in lista:
+#     print(e)
+#
+# zestaw={
+#     (1,'B'),
+#     (2,'C'),
+#     (1,'B')
+# }
+# print(zestaw)
+
+
+# import my_tools as mt
+# lista=set(  mt.get_data("data.csv")  )
+# for e in lista:
+#     print(e)
+
+#map, filter
+
+#przerwa do 10:17
+
+#
+# slownik={
+#     "klucz1":1234
+# }
+#
+# slownik=dict()
+# slownik['klucz1']='wartość 1'
+# slownik['inny_klucz']=123456
+# slownik['lista']=[1,2,3,4,'whatever']
+# slownik['krotka']=(88,88,88,88)
+#
+#
+#
+# print(slownik['inny_klucz'])
+# print(slownik['lista'])
+# slownik['lista']='zmienione'
+# print(slownik['lista'])
+#
+# for k in slownik:
+#     print(k,slownik[k])
+#
+#
+# for k in slownik.keys():
+#     print(k,slownik[k])
+#
+# for v in slownik.values():
+#     print(v)
+#
+# if 'gołąb' in slownik:
+#     print('mamy taki klucz')
+# else:
+#     print('nie mamy takiego klucza')
+#
+# print(list(slownik.values()))
+#
+# if 'zmienione' in list(slownik.values()):
+#     print('mamy taką wartość')
+# else:
+#     print('nie mamy takiej wartości')
+#
+
+#print(config['encoding'])
+
+#16. Stwórz plik ustawienia.txt i umieść w nim poniższe dane
+# encoding;utf-8
+# timezone;-2
+# color;black
+# Następnie wczytaj dane do słownika w ten sposób by pierwsza kolumna stanowila klucze a druga przypisane do nich
+# wartości. Przeiteruj po słowniku i wypisz klucze oraz przypisane do nich wartości
