@@ -1563,3 +1563,16 @@
 #18. Stworz generator ktory bedzie przyjmowal przez parametr ilosc elementow a nastepnie zwracal
 # elementy o tresci 'element o indeksie x'( gdzie x bedzie numerem podawanego elementu)
 # czekajac 1 sekunde przed zwrotem kazdego elementu.
+#
+# import time
+# def generator(ile):
+#     for x in range(1,ile+1):
+#         time.sleep(1)
+#         yield f'element o numerze {x}'
+#
+#
+# for g in generator(10):
+#     print(g)
+
+#19. Stwórz generator który będzie podawał nieskończenie wiele liczb parzystych.
+# Przetestuj go pobierając z niego kolejne wartości i wyświetlając je na konsoli.
