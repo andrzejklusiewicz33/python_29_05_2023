@@ -1987,3 +1987,80 @@ import time
 # wypisze na konsoli. Dodaj funkcję "powieksz" i "podziel" które mają zwracać otrzymane przez argument
 # dane odpowiednio po powiększeniu i podzieleniu tekstu na słowa. Wywołaj funkcję "parse"
 # przekazując do niej ciąg tekstowy składający się z więcej niż 1 słowa oraz funkcje "powieksz" i "podziel"
+
+
+
+# def parse(text,*functions):
+#     for f in functions:
+#         text=f(text)
+#     print(text)
+#
+# def powieksz(text):
+#     return text.upper()
+#
+# def podziel(text):
+#     return text.split()
+#
+# parse('siała baba mak',powieksz,podziel)
+
+# def extract():
+#     print('extract')
+# def transform():
+#     print('transform')
+# def load():
+#     print('load')
+#
+# # load()
+# # extract()
+# # transform()
+#
+#
+# #
+# def load_warehouse():
+#     extract()
+#     transform()
+#     load()
+#
+# load_warehouse()
+#
+
+
+
+
+# #
+# def load_warehouse():
+#     def extract():
+#         print('extract')
+#     def transform():
+#         print('transform')
+#     def load():
+#         print('load')
+#     extract()
+#     transform()
+#     load()
+#
+# load_warehouse()
+
+#wzorce projektowe
+
+
+# def oddaj_funkcje():
+#     def funkcja():
+#         print('dupa')
+#     return funkcja
+#
+#
+# f=oddaj_funkcje()
+# f()
+
+
+#27. Stwórz funcję która będzie posiadała dwie funkcje wewnętrzne.
+# Jedna z tych funkcji ma powiekszac i zwracac otrzymany ciag znakow,
+# druga pomniejszac i zwracac otrzymany ciąg znaków. Funkcja zewnętrzna ma
+# zwracać funkcję powiększającą gdy zostanie jej przez argument przekazana wartosc 1
+# i funkcję pomniejszającą gdy otrzyma wartość 2.
+# Odbierz obiekt funkcji wewnętrznej poprzez wywołanie funkcji zewnętrznej
+# i zastosuj otrzymaną funkcję na ciągu tekstowym.
+
+def dej(x):
+    pass
