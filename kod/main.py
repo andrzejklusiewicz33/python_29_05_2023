@@ -2517,3 +2517,5 @@ s1.marka='Renault'
 s1.model='Kadjar'
 s1.rejestracja='WY 12345'
 s1.wyswietl_mnie()
+print(s1.__dict__)
+print(str(s1.__dict__))
