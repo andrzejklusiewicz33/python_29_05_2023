@@ -2462,3 +2462,58 @@ import time
 #29.Stwórz klasę "Samochod" posiadającą pola "marka", "model", "rejestracja".
 # Klasa ta powinna zawierać też metodę "wyswietl" wypisującą dane z obiektu na konsoli
 # Stwórz dwa obiekty tej klasy i korzystajac  z metody "wyświetl" wyswietl na konsoli ich zawartość.
+#
+# class Samochod:
+#     marka=None
+#     model=None
+#     rejestracja=None
+#     def wyswietl_mnie(self):
+#         print(f'marka={self.marka}, model={self.model}, rejestracja={self.rejestracja}')
+#
+# s1=Samochod()
+# s1.marka='Renault'
+# s1.model='Kadjar'
+# s1.rejestracja='WY 12345'
+# s2=Samochod()
+# s2.marka='Czarny'
+# s2.model='Ciągnik'
+# s2.rejestracja='POJ 2400'
+# s1.wyswietl_mnie()
+# s2.wyswietl_mnie()
+# # print(s1.marka,s1.model,s1.rejestracja)
+# # print(s2.marka,s2.model,s2.rejestracja)
+
+#
+# class Person:
+#     first_name=None
+#     last_name=None
+#     def witacz(self):
+#         print(f'siema, jestem {self.first_name} {self.last_name}!')
+#     def set_values(self,i,n):
+#         self.first_name=i
+#         self.last_name=n
+#
+#
+#
+# p1=Person()
+# p1.set_values('Andrzej','Klusiewicz')
+# p1.witacz()
+# p2=Person()
+# p2.set_values('Andrzej','Klusiewicz')
+# p2.witacz()
+
+#30. Zadbaj o to by klasa Samochod posiadała metodę pozwalającą ustawić wartości wszystkich pól.
+# Jej przykładowe wywołanie: s1.ustaw_wartosci(‘Renault’,’Kadjar’,’WE968RP’)
+
+class Samochod:
+    marka=None
+    model=None
+    rejestracja=None
+    def wyswietl_mnie(self):
+        print(f'marka={self.marka}, model={self.model}, rejestracja={self.rejestracja}')
+
+s1=Samochod()
+s1.marka='Renault'
+s1.model='Kadjar'
+s1.rejestracja='WY 12345'
+s1.wyswietl_mnie()
