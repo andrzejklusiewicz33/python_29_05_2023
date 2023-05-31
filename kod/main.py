@@ -2780,10 +2780,200 @@ class Person:
 #     print(e)
 
 
-people=[Person('Andrzej','Programmer'),Person('Arnold','Boczek'),Person('Ferdynand','Kiepski')]
-for e in people:
-    print(e)
+# people=[Person('Andrzej','Programmer'),Person('Arnold','Boczek'),Person('Ferdynand','Kiepski')]
+# for e in people:
+#     print(e)
 
 
 #34. Załaduj dane z pliku data.csv do postaci listy obiektów.
 # Następnie przeiteruj po tej liście i wyświetl zawartość każdego z obiektów
+#
+# class Player:
+#     def __init__(self,id,first_name,last_name,height,weight):
+#         self.id=id
+#         self.first_name=first_name
+#         self.last_name=last_name
+#         self.height=height
+#         self.weight=weight
+#
+#     def __str__(self):
+#         return str(self.__dict__)
+# #
+# # p=Player(1,'Andrzej','Klusiewicz',1.76,80)
+# # print(p)
+#
+# result=[]
+# for linia in open('data.csv',encoding='utf-8'):
+#     lista=linia.strip().split(';')
+#     p=Player(lista[0],lista[1],lista[2],lista[3],lista[4])
+#     result.append(p)
+#
+# for r in result:
+#     print(r)
+#
+#
+#
+# class Player:
+#     def __init__(self,id,first_name,last_name,height,weight):
+#         self.id=id
+#         self.first_name=first_name
+#         self.last_name=last_name
+#         self.height=height
+#         self.weight=weight
+#
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+#
+# result=[]
+# for linia in open('data.csv',encoding='utf-8'):
+#     lista=linia.strip().split(';')
+#     p=Player(*lista)
+#     result.append(p)
+#
+# for r in result:
+#     print(r)
+
+
+
+
+#
+# class Player:
+#     def __init__(self,id,first_name,last_name,height,weight):
+#         self.id=id
+#         self.first_name=first_name
+#         self.last_name=last_name
+#         self.height=height
+#         self.weight=weight
+#
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+#
+# result=[]
+# for linia in open('data.csv',encoding='utf-8'):
+#     result.append(Player(*linia.strip().split(';')))
+#
+# for r in result:
+#     print(r)
+
+#
+#
+# class Player:
+#     def __init__(self,id,first_name,last_name,height,weight):
+#         self.id=id
+#         self.first_name=first_name
+#         self.last_name=last_name
+#         self.height=height
+#         self.weight=weight
+#
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+#
+# for r in [Player(*linia.strip().split(';')) for linia in open('data.csv',encoding='utf-8')]: print(r)
+
+#
+# from faker import Faker
+# f=Faker('PL_pl')
+# for x in range(1000):
+#     print(f.first_name(),f.last_name(),f.email(),f.phone_number(),f.company())
+
+#przerwa do 14:42
+#
+#
+# class Person:
+#     def __init__(self,f,l):
+#         if l is None:
+#             raise Exception('Nazwisko nie może być NONE')
+#         self.first_name=f
+#         self.last_name=l
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# # p=Person('Andrzej','Klusiewicz')
+# # print(p)
+#
+#
+# p=Person(None,'')
+# print(p)
+
+
+
+#
+# class Person:
+#     def __init__(self,f,l):
+#         if l is None:
+#             raise Exception('Nazwisko nie może być NONE')
+#         elif len(l)<3:
+#             raise Exception('Nazwisko musi składać się z minimum 3 znaków :D')
+#         self.first_name=f
+#         self.last_name=l
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# # p=Person('Andrzej','Klusiewicz')
+# # print(p)
+#
+#
+# p=Person(None,'')
+# print(p)
+
+#
+# class Person:
+#     def __init__(self,f,l):
+#         if l is None:
+#             raise Exception('Nazwisko nie może być NONE')
+#         elif len(l)<3:
+#             raise Exception('Nazwisko musi składać się z minimum 3 znaków :D')
+#         self.first_name=f
+#         self.last_name=l
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# # p=Person('Andrzej','Klusiewicz')
+# # print(p)
+#
+#
+# p=Person('A','ABC')
+# p.last_name=None #lol
+# print(p)
+
+
+
+# class Person:
+#     def __init__(self,f,l):
+#         self.set_last_name(l)
+#         self.__first_name=f
+#
+#     def set_last_name(self,ln):
+#         if ln is None:
+#             raise Exception('Nazwisko nie może być NONE')
+#         elif len(ln)<3:
+#             raise Exception('Nazwisko musi składać się z minimum 3 znaków :D')
+#         self.__last_name = ln
+#
+#     def get_last_name(self):
+#         return self.__last_name
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# p=Person('Andrzej','Klusiewicz')
+# #p.set_last_name(None)
+# print(p.get_last_name())
+# # p=Person('A','ABC')
+# # p.last_name=None #lol
+# # print(p)
+# #
+# # p=Person('A','ABC')
+# # p.__last_name=None #lol
+# # print(p)
+
+
+#XX. Stwórz klasę Samochod od nowa z polami marka, model, rejestracja oraz zaimplementowaną metodą __str__.
+# Zadbaj o to by w klasie samochód wszystkie pola były prywatne, ale by istniały metody typu setter
+# służące do ustawiania wartości tych pól. Zadbaj o to by wszystkie przypisania wewnątrz klasy do pól
+# były wykonywane za pośrednictwem setterów.
+# Zadbaj o to by nie dało się ustawić marki ani modelu o zerowej długości oraz o to
+# by długość rejestracji zawsze mieściła się w zakresie 7-8 znaków.
+# W przypadku podania niewłasciwych danych rzuć wyjątkiem z adekwatnym komunikatem.
