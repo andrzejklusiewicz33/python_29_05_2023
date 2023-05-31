@@ -2348,8 +2348,117 @@ import time
 # from datetime import datetime
 # now = datetime.now()
 # print(now.strftime("%d/%m/%Y %H:%M:%S"))
+#
+# def funkcja(*args):
+#     print(','.join( [str(a) for a in args] ))
+#
+# funkcja(1,'koza','kebab')
 
-def funkcja(*args):
-    print(','.join( [str(a) for a in args] ))
+#
+# from datetime import datetime
+# def observe(fun):
+#     def inside(*args,**kwargs):
+#         result=fun(*args,**kwargs)
+#         when = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+#         print(f'{when};{fun.__name__};args={str(args)},kwargs={str(kwargs)};{result}')
+#         return result
+#     return inside
+#
+#
+# @observe
+# def test(a,b):
+#     print('whatever')
+#     return a*b
+#
+# test(3,2)
+#
+#
+# import random
+# from datetime import datetime
+# def observe(fun):
+#     def inside(*args,**kwargs):
+#         result=fun(*args,**kwargs)
+#         when = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+#         line = f'{when};{fun.__name__};args={str(args)},kwargs={str(kwargs)};{result}'
+#         print(line)
+#         with open('mylog.log',encoding='utf-8',mode='a') as file:
+#             file.write(line+"\n")
+#         return result
+#     return inside
+#
+#
+# @observe
+# def test(a,b):
+#     print('whatever')
+#     return a*b
+#
+# for x in range(20):
+#     test(random.randint(1,100),random.randint(1,100))
 
-funkcja(1,'koza','kebab')
+
+#przerwa do 11:40
+
+#SQL Achemy
+
+# print(osoba.imie,osoba.nazwisko) #obiekt
+# print(osoba[0],osoba[1]) #krotka
+#
+# class Person:
+#     first_name=None
+#     last_name=None
+#
+# p1=Person()
+# p1.first_name='Andrzej'
+# p1.last_name='Klusiewicz'
+# p2=Person()
+# p2.first_name='Agnieszka'
+# p2.last_name='Borucka'
+#
+# print(p1.first_name,p1.last_name)
+# print(p2.first_name,p2.last_name)
+#
+#
+# class Person:
+#     first_name=None
+#     last_name=None
+#     def witacz(self):
+#         print('siema!')
+#
+# p1=Person()
+# p1.first_name='Andrzej'
+# p1.last_name='Klusiewicz'
+# p2=Person()
+# p2.first_name='Agnieszka'
+# p2.last_name='Borucka'
+#
+# print(p1.first_name,p1.last_name)
+# print(p2.first_name,p2.last_name)
+# p1.witacz()
+# p2.witacz()
+
+
+
+#
+# class Person:
+#     first_name=None
+#     last_name=None
+#     def witacz(self):
+#         print(f'siema, jestem {self.first_name} {self.last_name}!')
+#
+#
+#
+# p1=Person()
+# p1.first_name='Andrzej'
+# p1.last_name='Klusiewicz'
+# p2=Person()
+# p2.first_name='Agnieszka'
+# p2.last_name='Borucka'
+#
+# print(p1.first_name,p1.last_name)
+# print(p2.first_name,p2.last_name)
+# p1.witacz()
+# p2.witacz()
+
+#29.Stwórz klasę "Samochod" posiadającą pola "marka", "model", "rejestracja".
+# Klasa ta powinna zawierać też metodę "wyswietl" wypisującą dane z obiektu na konsoli
+# Stwórz dwa obiekty tej klasy i korzystajac  z metody "wyświetl" wyswietl na konsoli ich zawartość.
