@@ -2273,3 +2273,83 @@ import time
 #
 # x=dej_koze()
 # print('x=',x)
+
+#https://realpython.com/
+# import time
+# def mierzczas(fun):
+#     def wewn(*args,**kwargs):
+#         print('dekorator!!')
+#         start=time.time()
+#         x=fun(*args,**kwargs)
+#         end=time.time()
+#         print(f'czas trwania funkcji {fun.__name__}: {end-start}s')
+#         return x
+#     return wewn
+#
+# @mierzczas
+# def spij(x):
+#     print('chrrrrrr....')
+#     time.sleep(x)
+#     print('pobudka!')
+#
+#
+#
+# spij(3)
+
+
+#create table log(id serial primary key, function_name text, time_of_run numeric);
+#select avg(time_of_run) from log where function_name='spij';
+#select function_name, avg(time_of_run) from log group by function_name order by 2 desc;
+#
+# import time
+# import random
+# import psycopg2
+# def mierzczas(fun):
+#     def wewn(*args,**kwargs):
+#         start=time.time()
+#         x=fun(*args,**kwargs)
+#         end=time.time()
+#         print(f'czas trwania funkcji {fun.__name__}: {end-start}s')
+#         connection=psycopg2.connect(host='localhost',database='postgres',user='postgres',password='oracle')
+#         cursor=connection.cursor()
+#         cursor.execute(f"insert into log(function_name,time_of_run) values ('{fun.__name__}','{end-start}')")
+#         connection.commit()
+#         connection.close()
+#         return x
+#     return wewn
+#
+# @mierzczas
+# def spij(x):
+#     #print('chrrrrrr....')
+#     time.sleep(x)
+#     #print('pobudka!')
+#     print('spanko')
+#
+# @mierzczas
+# def inna(x):
+#     #print('chrrrrrr....')
+#     time.sleep(x)
+#     #print('pobudka!')
+#
+#
+# for x in range(10):
+#     spij(random.randint(1,4))
+#     inna(random.randint(1, 4))
+#
+
+
+#28.     • Stwórz dekorator który będzie rejestrował na konsole wszystkie wywołania
+# dekorowanej funkcji z informacją o nazwie dekorowanej funkcji, dacie i czasie jej wywołania
+# , argumentach przekazanych do dekorowanej funkcji i ewentualna wartosc zwracana. Log ma być w formacie CSV.
+# Same argumenty powinny być rejestrowane w jednej kolumnie razem.
+# Pobranie nazwy funkcji: fun.__name__,
+# Pobranie aktualnego czasu i daty:
+#
+# from datetime import datetime
+# now = datetime.now()
+# print(now.strftime("%d/%m/%Y %H:%M:%S"))
+
+def funkcja(*args):
+    print(','.join( [str(a) for a in args] ))
+
+funkcja(1,'koza','kebab')
