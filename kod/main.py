@@ -2615,14 +2615,30 @@ import time
 
 #31.Dodaj do klasy Samochód konstruktor wymuszający ustawienie wartości wszystkich pól przy tworzeniu obiektu.
 # Stworz obiekt klasy samochod i wywolaj na nim metode wyswietl
-class Samochod:
-    marka=None
-    model=None
-    rejestracja=None
-    def wyswietl_mnie(self):
-        print(f'marka={self.marka}, model={self.model}, rejestracja={self.rejestracja}')
-    def ustaw_wartosci(self,ma,mo,re):
-        self.marka=ma
-        self.model=mo
-        self.rejestracja=re
+# class Samochod:
+#     marka=None
+#     model=None
+#     rejestracja=None
+#     def __init__(self,ma,mo,re):
+#         self.marka=ma
+#         self.model=mo
+#         self.rejestracja=re
+#     def wyswietl_mnie(self):
+#         print(f'marka={self.marka}, model={self.model}, rejestracja={self.rejestracja}')
+#
+#
+#
+# s=Samochod('Audi','A6','12345')
+# s.wyswietl_mnie()
 
+#PEP8
+
+#32. Stwórz klasę Bmi posiadającą pola height i weight.
+# Pola te mają być uzupełniane przy tworzeniu obiektu. Ma to uzupełnianie być wymagane.
+# Dodaj do klasy metodę get_bmi która zwróci obliczone na podstawie pól BMI.
+# Powołaj do życia obiekt tej klasy i wyświetl na konsoli obliczone BMI.
+
+wzrost=1.76
+masa=93
+bmi=round(masa/pow(wzrost,2),2)
+print(bmi)
