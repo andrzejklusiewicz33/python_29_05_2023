@@ -2744,14 +2744,46 @@ import time
 
 #33. Przesłoń metodę "__str__" w klasie "Samochod" i przerób metodę "wyswietl"
 # w taki sposób by korzystała z metody "__str__"
-class Samochod:
-    marka=None
-    model=None
-    rejestracja=None
-    def __init__(self,ma,mo,re):
-        self.marka=ma
-        self.model=mo
-        self.rejestracja=re
-    def wyswietl_mnie(self):
-        print(f'marka={self.marka}, model={self.model}, rejestracja={self.rejestracja}')
+# class Samochod:
+#     marka=None
+#     model=None
+#     rejestracja=None
+#     def __init__(self,ma,mo,re):
+#         self.marka=ma
+#         self.model=mo
+#         self.rejestracja=re
+#
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+#     def wyswietl_mnie(self):
+#         print(self.__str__())
+#
+# s=Samochod('A','B','C')
+# print(s)
+# s.wyswietl_mnie()
 
+
+
+class Person:
+    def __init__(self,f,l):
+        self.first_name=f
+        self.last_name=l
+    def __str__(self):
+        return str(self.__dict__)
+#
+# p1=Person('Andrzej','Programmer')
+# p2=Person('Arnold','Boczek')
+# p3=Person('Ferdynand','Kiepski')
+# people=[p1,p2,p3]
+# for e in people:
+#     print(e)
+
+
+people=[Person('Andrzej','Programmer'),Person('Arnold','Boczek'),Person('Ferdynand','Kiepski')]
+for e in people:
+    print(e)
+
+
+#34. Załaduj dane z pliku data.csv do postaci listy obiektów.
+# Następnie przeiteruj po tej liście i wyświetl zawartość każdego z obiektów
