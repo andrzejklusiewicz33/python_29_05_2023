@@ -2637,8 +2637,121 @@ import time
 # Pola te mają być uzupełniane przy tworzeniu obiektu. Ma to uzupełnianie być wymagane.
 # Dodaj do klasy metodę get_bmi która zwróci obliczone na podstawie pól BMI.
 # Powołaj do życia obiekt tej klasy i wyświetl na konsoli obliczone BMI.
+#
+# wzrost=1.76
+# masa=93
+# bmi=round(masa/pow(wzrost,2),2)
+# print(bmi)
+#
+# class Bmi:
+#     height=None
+#     weight=None
+#     def __init__(self,h,w):
+#         self.height=h
+#         self.weight=w
+#
+#     def get_bmi(self):
+#         return round(self.weight/pow(self.height,2),2)
+#
+# b=Bmi(1.76,80)
+# print(b.get_bmi())
 
-wzrost=1.76
-masa=93
-bmi=round(masa/pow(wzrost,2),2)
-print(bmi)
+
+#
+# class Bmi:
+#
+#
+#     def __init__(self,h,w):
+#         self.height=h
+#         self.weight=w
+#
+#     def get_bmi(self):
+#         return round(self.weight/pow(self.height,2),2)
+#
+# b=Bmi(1.76,80)
+# print(b.get_bmi())
+#
+# class Person:
+#     pass
+#
+#
+#
+# p1=Person()
+# p1.pole_ktorego_nie_ma='wtf?'
+# p2=Person()
+#
+# print(p1.__dict__)
+# print(p2.__dict__)
+#
+# def funkcja():
+#     print('na zewnątrz')
+#
+# class Klasa:
+#     def __init__(self):
+#         funkcja()
+#
+# k=Klasa()
+
+#przerwa do 13:20
+
+# class Person:
+#     def __init__(self,f,l):
+#         self.first_name=f
+#         self.last_name=l
+#
+#     def __str__(self):
+#         return "zserializowana postać obiektu"
+#     def wyswietl(self):
+#         print(self.first_name,self.last_name)
+#
+# p=Person('Andrzej','Programmer')
+# print(p)
+
+
+# class Person:
+#     def __init__(self,f,l):
+#         self.first_name=f
+#         self.last_name=l
+#     def __str__(self):
+#         return f'first_name={self.first_name}, last_name={self.last_name}'
+#
+# p=Person('Andrzej','Programmer')
+# print(p)
+#
+# class Person:
+#     def __init__(self,f,l):
+#         self.first_name=f
+#         self.last_name=l
+#     def __str__(self):
+#         return f'first_name={self.first_name}, last_name={self.last_name}'
+#
+# p=Person('Andrzej','Programmer')
+# print(p)
+# print(p.__dict__)
+
+
+
+# class Person:
+#     def __init__(self,f,l):
+#         self.first_name=f
+#         self.last_name=l
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# p=Person('Andrzej','Programmer')
+# print(p)
+
+
+#33. Przesłoń metodę "__str__" w klasie "Samochod" i przerób metodę "wyswietl"
+# w taki sposób by korzystała z metody "__str__"
+class Samochod:
+    marka=None
+    model=None
+    rejestracja=None
+    def __init__(self,ma,mo,re):
+        self.marka=ma
+        self.model=mo
+        self.rejestracja=re
+    def wyswietl_mnie(self):
+        print(f'marka={self.marka}, model={self.model}, rejestracja={self.rejestracja}')
+
