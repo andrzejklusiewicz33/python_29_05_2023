@@ -2994,20 +2994,183 @@ class Person:
 # s=Samochod(None,'B','C')
 # print(s)
 
+#
+#
+# class Samochod:
+#     def __init__(self,ma,mo,re):
+#         self.ustaw_marke(ma)
+#         self.ustaw_model(mo)
+#         self.ustaw_rejestracje(re)
+#
+#     def ustaw_marke(self,ma):
+#         if  ma is None or len(ma)==0:
+#             raise Exception('Marka nie może być pusta')
+#         self.__marka = ma
+#
+#     def ustaw_model(self,mo):
+#         if  mo is None or len(mo)==0:
+#             raise Exception('Model nie może być pusty')
+#         self.__model = mo
+#
+#     def ustaw_rejestracje(self,re):
+#         if re is None:
+#             raise Exception('Rejestracja nie może być pusta')
+#         elif len(re)>8 or len(re)<7:
+#             raise Exception('Długość rejestracji musi mieścić się w 7-8 znaków')
+#         self.__rejestracja=re
+#
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# s=Samochod('A','B',None)
+# print(s)
 
 
-class Samochod:
-    def __init__(self,ma,mo,re):
-        self.ustaw_marke(ma)
-        self.__model=mo
-        self.__rejestracja=re
+#FUUUUUUUUU
+# class Samochod:
+#     def jedz(self):
+#         print('brooooom!')
+#
+# class SuperSamochod:
+#     def jedz(self):
+#         print('brooooom!')
+#
+#     def turbo(self):
+#         print('tuuuuuurboooooooo!')
+#
+# s=Samochod()
+# s.jedz()
+#
+# ss=SuperSamochod()
+# ss.jedz()
+# ss.turbo()
 
-    def ustaw_marke(self,ma):
-        if  ma is None or len(ma)==0:
-            raise Exception('Marka nie może być pusta')
-        self.__marka = ma
-    def __str__(self):
-        return str(self.__dict__)
+#KONIEC FUUUUUU
 
-s=Samochod(None,'B','C')
-print(s)
+
+
+# class Samochod:
+#     def jedz(self):
+#         print('brooooom!')
+#
+# class SuperSamochod(Samochod):
+#     def turbo(self):
+#         print('tuuuuuurboooooooo!')
+#
+# s=Samochod()
+# s.jedz()
+#
+# ss=SuperSamochod()
+# ss.jedz()
+# ss.turbo()
+
+
+# class Samochod:
+#     def jedz(self):
+#         print('brooooom!')
+#
+# class SuperSamochod(Samochod):
+#
+#     def jedz(self):
+#         print('bardziej brooom!')
+#     def turbo(self):
+#         print('tuuuuuurboooooooo!')
+#
+# s=Samochod()
+# s.jedz()
+#
+# ss=SuperSamochod()
+# ss.jedz()
+# ss.turbo()
+
+#XX. Stwórz klasę Samochod i dodaj do niej metodę jedz() która bedzie wyświetlala napis na konsoli.
+# Dodaj konstruktor pozwalajacy tworzyc obiekty z podaniem marki modelu i rejestracji do klasy Samochod.
+# Stwórz klasę "Działo" która będzie posiadała metodę strzelaj(). Stwórz klasę "Czolg"
+# która będzie dziedziczyła po klasach Samochod i Dzialo.
+# Stwórz obiekt klasy Czolg i wywolaj na nim zarówno metodę jedz() jak i strzelaj().
+# Zwróć uwagę na to jak trzeba wywołać konstruktor obiektu klasy Czolg.
+# Sprawdz czy zmiana kolejnosci dziedziczenia wplywa na sposob wywołania konstruktora.
+# Sprawdz czy dodanie bezparametrowego __init__ do klasy Czolg zmienia zachowanie.
+#
+# class Samochod:
+#
+#     def __init__(self,rejestracja):
+#         print(f'param={rejestracja}')
+#     def jedz(self):
+#         print('brooooom!')
+#
+# class Dzialo:
+#     def strzelaj(self):
+#         print('jeb z granatnika na komisariacie....')
+#
+# class Czolg(Dzialo,Samochod):
+#     def __init__(self):
+#         pass
+#
+# c=Czolg()
+# c.jedz()
+# c.strzelaj()
+#
+# class A:
+#     def fun(self):
+#         print('funkcja z A')
+#
+# class B:
+#     def fun(self):
+#         print('funkcja z B')
+#
+# class C(A,B):
+#     pass
+#
+# c=C()
+# c.fun()
+
+
+# def generator():
+#     for x in range(1,1001):
+#         yield x
+#
+# for g in generator():
+#     print(g)
+#
+# g=generator()
+# for i in range(10):
+#     print(next(g))
+# print('--------')
+# #g=generator()
+# for i in range(10):
+#     print(next(g))
+# #
+# class Iterator:
+#     def __iter__(self):
+#         return self
+#     def __next__(self):
+#         return 1
+#
+# i=Iterator()
+# for x in i:
+#     print(x)
+
+#
+#
+# class Iterator:
+#     def __init__(self):
+#         self.x=0
+#     def __iter__(self):
+#         return self
+#     def __next__(self):
+#         self.x+=1
+#         return self.x
+#     def reset(self):
+#         self.x=0
+#
+#
+# i=Iterator()
+# for a in range(10):
+#     print(next(i))
+#
+# print('-------')
+# i.reset()
+# for a in range(10):
+#     print(next(i))
+
