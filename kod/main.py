@@ -2505,17 +2505,124 @@ import time
 #30. Zadbaj o to by klasa Samochod posiadała metodę pozwalającą ustawić wartości wszystkich pól.
 # Jej przykładowe wywołanie: s1.ustaw_wartosci(‘Renault’,’Kadjar’,’WE968RP’)
 
+# class Samochod:
+#     marka=None
+#     model=None
+#     rejestracja=None
+#     def wyswietl_mnie(self):
+#         print(f'marka={self.marka}, model={self.model}, rejestracja={self.rejestracja}')
+#
+# s1=Samochod()
+# s1.marka='Renault'
+# s1.model='Kadjar'
+# s1.rejestracja='WY 12345'
+# s1.wyswietl_mnie()
+# print(s1.__dict__)
+# #print(str(s1.__dict__))
+#
+# for k in s1.__dict__:
+#     print(k,s1.__dict__[k])
+
+# class Samochod:
+#     marka=None
+#     model=None
+#     rejestracja=None
+#     def wyswietl_mnie(self):
+#         print(f'marka={self.marka}, model={self.model}, rejestracja={self.rejestracja}')
+#     def ustaw_wartosci(self,ma,mo,re):
+#         self.marka=ma
+#         self.model=mo
+#         self.rejestracja=re
+#
+# s=Samochod()
+# s.ustaw_wartosci('A',"B",'C')
+# s.wyswietl_mnie()
+
+# class Samochod:
+#     '''Aby ustawić wartości we wszystkich polach, wykorzystaj metodę ustaw_wartosci'''
+#     marka=None
+#     model=None
+#     rejestracja=None
+#     def wyswietl_mnie(self):
+#         print(f'marka={self.marka}, model={self.model}, rejestracja={self.rejestracja}')
+#     def ustaw_wartosci(self,ma,mo,re):
+#         self.marka=ma
+#         self.model=mo
+#         self.rejestracja=re
+
+# s=Samochod()
+# s.ustaw_wartosci('A',"B",'C')
+# s.wyswietl_mnie()
+#
+# help(Samochod)
+
+
+# class Samochod:
+#     '''Aby ustawić wartości we wszystkich polach, wykorzystaj metodę ustaw_wartosci'''
+#     marka=None
+#     model=None
+#     rejestracja=None
+#     def wyswietl_mnie(self):
+#         print(f'marka={self.marka}, model={self.model}, rejestracja={self.rejestracja}')
+#     def ustaw_wartosci(self,ma,mo,re):
+#         self.marka=ma
+#         self.model=mo
+#         self.rejestracja=re
+#
+# #s=Samochod('A','B','C')
+# s=Samochod()
+# s.wyswietl_mnie()
+
+#
+# marka=None
+# model=None
+# rejestracja=None
+#
+# def __init__(self):
+#     print('konstruktor!')
+# def wyswietl_mnie(self):
+#     print(f'marka={self.marka}, model={self.model}, rejestracja={self.rejestracja}')
+# def ustaw_wartosci(self,ma,mo,re):
+#     self.marka=ma
+#     self.model=mo
+#     self.rejestracja=re
+# class Samochod:
+#     pass
+#
+#
+#
+#
+# #s=Samochod('A','B','C')
+# #s=Samochod()
+# #s.wyswietl_mnie()
+
+# class Person:
+#     first_name=None
+#     last_name=None
+#     def __init__(self,fn,ln):
+#         print('konstruktor!')
+#         if fn is None or ln is None:
+#             raise Exception('Imię ani nazwisko nie mogą być NONE')
+#         self.first_name=fn
+#         self.last_name=ln
+#     def witacz(self):
+#         print(f'siema, jestem {self.first_name} {self.last_name}!')
+#
+#
+# p=Person('Andrzej','Klusiewicz')
+# p.witacz()
+
+
+#31.Dodaj do klasy Samochód konstruktor wymuszający ustawienie wartości wszystkich pól przy tworzeniu obiektu.
+# Stworz obiekt klasy samochod i wywolaj na nim metode wyswietl
 class Samochod:
     marka=None
     model=None
     rejestracja=None
     def wyswietl_mnie(self):
         print(f'marka={self.marka}, model={self.model}, rejestracja={self.rejestracja}')
+    def ustaw_wartosci(self,ma,mo,re):
+        self.marka=ma
+        self.model=mo
+        self.rejestracja=re
 
-s1=Samochod()
-s1.marka='Renault'
-s1.model='Kadjar'
-s1.rejestracja='WY 12345'
-s1.wyswietl_mnie()
-print(s1.__dict__)
-print(str(s1.__dict__))
