@@ -2977,3 +2977,37 @@ class Person:
 # Zadbaj o to by nie dało się ustawić marki ani modelu o zerowej długości oraz o to
 # by długość rejestracji zawsze mieściła się w zakresie 7-8 znaków.
 # W przypadku podania niewłasciwych danych rzuć wyjątkiem z adekwatnym komunikatem.
+#
+# class Samochod:
+#     def __init__(self,ma,mo,re):
+#         self.ustaw_marke(ma)
+#         self.__model=mo
+#         self.__rejestracja=re
+#
+#     def ustaw_marke(self,ma):
+#         if ma is None or len(ma)==0:
+#             raise Exception('Marka nie może być pusta')
+#         self.__marka = ma
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# s=Samochod(None,'B','C')
+# print(s)
+
+
+
+class Samochod:
+    def __init__(self,ma,mo,re):
+        self.ustaw_marke(ma)
+        self.__model=mo
+        self.__rejestracja=re
+
+    def ustaw_marke(self,ma):
+        if  ma is None or len(ma)==0:
+            raise Exception('Marka nie może być pusta')
+        self.__marka = ma
+    def __str__(self):
+        return str(self.__dict__)
+
+s=Samochod(None,'B','C')
+print(s)
