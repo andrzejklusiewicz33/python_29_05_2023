@@ -1931,9 +1931,59 @@ import time
 # Dodaj funkcję która będzie w stanie przyjąć przez argument inną funkcję
 # oraz ciąg tekstowy do obróbki który następnie po obrobieniu przez funkcję
 # podaną jako argument zostanie wyświetlony na konsoli
+#
+# def pomniejsz(text):
+#     return text.lower()
+# def powieksz(text):
+#     return text.upper()
+#
+# def obrob(fun,text):
+#     print(fun(text))
+#
+#
+# obrob(pomniejsz,'siala BABA mak')
+# obrob(powieksz,'siala BABA mak')
+# obrob(lambda x:x.split(),'siala BABA mak')
+# obrob(lambda x:x.upper(),'siala BABA mak')
+# obrob(lambda x:x.lower(),'siala BABA mak')
 
-def pomniejsz(text):
-    return text.lower()
+#25. Stworz funkcje ktora bedzie drukowala na konsoli dane otrzymane przez pierwszy argument
+# obrobione uprzednio przez wyrazenie lambda podane jako drugi argument.
+#
+# def siala():
+#     print('siała')
+#
+# def baba():
+#     print('baba')
+#
+# def mak():
+#     print('marychę (i dostała 10 lat)')
+#
+# #s=siala
+# #s()
+#
+# funkcje=[siala,baba,mak]
+# for f in funkcje:
+#     f()
 
-obrob(pomniejsz,'siala BABA mak')
+#print('s=',s)
+#
+# def pomnoz_przez_dwa(x):
+#     return x*2
+#
+# def podziel_przez_dwa(x):
+#     return x/2
+#
+# def dodaj_dwa(x):
+#     return x+2
+#
+#
+# funkcje=[pomnoz_przez_dwa,podziel_przez_dwa,dodaj_dwa]
+# for f in funkcje:
+#     print(f.__name__ ,f(100)  )
 
+#26. Stwórz funkcję "parse" która będzie otrzymywała przez argumenty wartosc tekstową oraz *args funkcji.
+# Funkcja ta ma zastosować każdą z otrzymanych przez *args funkcji na wartości tekstowej którą następnie
+# wypisze na konsoli. Dodaj funkcję "powieksz" i "podziel" które mają zwracać otrzymane przez argument
+# dane odpowiednio po powiększeniu i podzieleniu tekstu na słowa. Wywołaj funkcję "parse"
+# przekazując do niej ciąg tekstowy składający się z więcej niż 1 słowa oraz funkcje "powieksz" i "podziel"
