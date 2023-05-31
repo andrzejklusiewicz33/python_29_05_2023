@@ -2062,5 +2062,214 @@ import time
 # Odbierz obiekt funkcji wewnętrznej poprzez wywołanie funkcji zewnętrznej
 # i zastosuj otrzymaną funkcję na ciągu tekstowym.
 
-def dej(x):
-    pass
+# def dej(x):
+#     def powieksz(t):
+#         return t.upper()
+#     def pomniejsz(t):
+#         return t.lower()
+#
+#     if x==1:
+#         return powieksz
+#     elif x==2:
+#         return pomniejsz
+#     else:
+#         raise Exception('muka! Nie ma takiej opcji')
+#
+# f1=dej(1)
+# print(f1('siała BABA mak'))
+# f2=dej(2)
+# print(f2('siała BABA mak'))
+# f3=dej(3)
+
+#przerwa do 10:03
+
+
+# @observer
+# def jakas():
+#     pass
+
+#@login_required
+#
+# def siemator():
+#     print('no siema!')
+# def dekorator(fun):
+#     def opakowanie():
+#         print('przed')
+#         fun()
+#         print('po')
+#     return opakowanie
+#
+#
+# f=dekorator(siemator)
+# f()
+
+#SOLID
+
+
+# def dekorator(fun):
+#     def opakowanie():
+#         print('przed')
+#         fun()
+#         print('po')
+#     return opakowanie
+#
+# @dekorator
+# def siemator():
+#     print('no siema!')
+#
+#
+# siemator()
+#
+# def dekorator(fun):
+#     def opakowanie():
+#         print('przed')
+#         fun()
+#         print('po')
+#     return opakowanie
+#
+# @dekorator
+# def siemator():
+#     print('no siema!')
+#
+# @dekorator
+# def siemator_imie(imie):
+#     print(f'no siema {imie}!')
+#
+#
+# siemator()
+# siemator_imie('Andrzej')
+
+
+#
+#
+# def dekorator_bezargumentowy(fun):
+#     def opakowanie():
+#         print('przed')
+#         fun()
+#         print('po')
+#     return opakowanie
+#
+#
+#
+# def dekorator_jednoargumentowy(fun):
+#     def opakowanie(i):
+#         print('przed')
+#         fun(i)
+#         print('po')
+#     return opakowanie
+#
+#
+# @dekorator_bezargumentowy
+# def siemator():
+#     print('no siema!')
+#
+# @dekorator_jednoargumentowy
+# def siemator_imie(imie):
+#     print(f'no siema {imie}!')
+#
+#
+# siemator()
+# siemator_imie('Andrzej')
+
+
+# #
+# def dekorator(fun):
+#     def opakowanie(*args,**kwargs):
+#         print(f'przed funkcją {fun.__name__}')
+#         fun(*args,**kwargs)
+#         print(f'po funkcji {fun.__name__}')
+#     return opakowanie
+#
+# @dekorator
+# def siemator():
+#     print('no siema!')
+#
+# @dekorator
+# def siemator_imie(imie):
+#     print(f'no siema {imie}!')
+#
+#
+# siemator()
+# siemator_imie('Andrzej')
+
+#siemator_imie(imie='Andrzej')
+
+
+#
+# def dekorator(fun):
+#     def opakowanie(*args,**kwargs):
+#         print(f'przed funkcją {fun.__name__}')
+#         fun(*args,**kwargs)
+#         print(f'po funkcji {fun.__name__}')
+#     return opakowanie
+#
+# @dekorator
+# def siemator():
+#     print('no siema!')
+#
+# @dekorator
+# def siemator_imie(imie):
+#     print(f'no siema {imie}!')
+#
+#
+# siemator()
+# siemator_imie('Andrzej')
+
+
+
+# def dekorator(fun):
+#     def opakowanie(*args,**kwargs):
+#         print(f'przed funkcją {fun.__name__}')
+#         result=fun(*args,**kwargs)
+#         print(f'po funkcji {fun.__name__}')
+#         return result
+#     return opakowanie
+#
+# @dekorator
+# def dej_koze():
+#     return 'koza'
+#
+# x=dej_koze()
+# print('x=',x)
+#
+#
+# import my_decorators
+# @my_decorators.dekorator
+# def dej_koze():
+#     print('jestem w funkcji')
+#     return 'koza'
+#
+# x=dej_koze()
+# print('x=',x)
+
+#help(dej_koze)
+
+
+#28. Stwórz funkcję której zadaniem będzie poczekanie 3 sekundy i wypisanie na konsoli komunikatu.
+# Dodaj dekorator który zliczy czas wykonywania tej funkcji.
+# Pobranie aktualnego czasu to: "time.time()", wstrzymanie na 3 sekundy: "time.sleep(3)"
+#
+# import time
+# start=time.time()
+# time.sleep(3)
+# koniec=time.time()
+# print(f'czas={koniec-start}s')
+#
+# #@mierzczas
+
+#
+#
+# def rejestrator(fun):
+#     def opakowanie(*args,**kwargs):
+#         print(f'przed funkcją {fun.__name__}')
+#         result=fun(*args,**kwargs)
+#         print(f'po funkcji {fun.__name__}')
+#         return result
+#     return opakowanie
+#
+# @rejestrator
+# def dej_koze():
+#     return 'koza'
+#
+# x=dej_koze()
+# print('x=',x)
