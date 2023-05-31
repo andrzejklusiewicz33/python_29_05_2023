@@ -13,7 +13,3 @@ def get_random_list():
     return data
 
 print('hello! Inicjalizujemy moduł.....')
-
-
-class Flower:
-    pass

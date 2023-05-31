@@ -3174,3 +3174,81 @@ class Person:
 # for a in range(10):
 #     print(next(i))
 
+# import my_tools
+# result=my_tools.get_random_list()
+# print(result)
+
+
+# import my_tools as mt
+# result=mt.get_random_list()
+# print(result)
+
+# from my_tools import get_random_list
+# result=get_random_list()
+# print(result)
+#
+# from my_tools import get_random_list,get_data
+# result=get_random_list()
+# print(result)
+
+#
+# from my_tools import *
+# result=get_random_list()
+# print(result)
+
+
+#import my_tools
+
+#import this
+
+# import tools.my_tools
+# print( tools.my_tools.get_random_list()  )
+
+#
+# import tools.my_tools as tt
+# print( tt.get_random_list()  )
+
+
+from tools.my_tools import *
+#print( get_random_list()  )
+#
+
+# import my_tools
+# f=my_tools.Flower()
+
+# import threading
+# def funkcja():
+#     import time
+#     for x in range(10):
+#         time.sleep(1)
+#         print('funkcja!!!')
+# #
+# # print('przed')
+# # funkcja()
+# # print('po')
+#
+# print('przed...')
+# t=threading.Thread(target=funkcja)
+# t.start()
+# print('po....')
+#
+#
+# import threading
+# def funkcja(ile):
+#     import time
+#     for x in range(ile):
+#         time.sleep(1)
+#         print(f'funkcja {x}!!!')
+#
+# print('przed...')
+# t=threading.Thread(target=funkcja,args=(4,) )
+# t.start()
+# print('po....')
+
+#    1. Stwórz iterator który bedzie podawał nieskończenie wiele kolejnych potęg liczby dwa
+#    2. Stwórz iterator który będzie zwracał nazwy kolejnych miesięcy. Iterator powinien też posiadać funkcję "restart" która spowoduje rozpoczęcie podawania miesięcy od początku.
+#    3. Stwórz pakiet zawierający moduł który bedzie zawierał funkcję przyjmującą wzrost i masę a zwracającą bmi. Zaimportuj i wywołaj tę funkcję w taki sposób by przy jej wywołaniu nie trzeba było  podawać nazwy pakietu ani modułu.
+#    4. Napisz program który przy wywołaniu dostanie kwotę, oprocentowanie i ilosc miesiecy trzymania lokaty, a na konsoli wyświetli kolejne miesiące i kapitał jaki po danym miesiącu mamy.
+#    5. [POCZYTAJ O ZJAWISKU WYŚCIGU WĄTKÓW i o OPERACJACH ATOMOWYCH W KONTEKŚCIE WĄTKÓW] Stwórz funkcję która będzie przyjmowała przez argument nazwę a następnie wypisywała na konsoli komunikat typu "początek wątku x", czekała 1 sekundę i wypisywała "koniec wątku x". W miejsce x powinna zostać wstawiona nazwa przekazana przez argument. Stwórz listę 5 wątków które otrzymają do wykonania opisaną funkcję z przekazaniem różnych dla każdego wątku nazw przekazywanych przez argument funkcji. Następnie przeiteruj po liście wątków i uruchom każdy z nich.
+
+#KLUSIEWICZ@JSYSTEMS.PL
